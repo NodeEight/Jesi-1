@@ -6,6 +6,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import Logo from "../assets/main.png";
+import React, { useState } from 'react';
 
 const socialmedia = [
   { icon: FaFacebookF, link: "https://www.facebook.com" },
@@ -68,9 +69,23 @@ const legal = [
 ]
 
 const Footer = () => {
+  const [loading, setLoading] = React.useState(false);
+
+  const [newletterInfo, setNewsLetterInfo] = useState({
+    email: "",
+  });
+
+  const handleInputChange = (event) => {
+    console.log("Input changing to:", event.target.value);
+    setNewsLetterInfo({ email: event.target.value });
+  };
+
+
+
   return (
-    <section id="contact" className="relative w-full pb-10 ">
-      <div className="bg-green_bg opacity-10 absolute inset-0 z-0"></div>
+    <section id="contact" className="relative w-full pb-10" style={{
+      backgroundColor: "rgba(0, 128, 128, 0.1)"
+    }}>
       <div className="flex flex-col md:flex-row justify-around pt-6 pb-2 w-full">
 
         <div className="flex flex-col justify-center items-center lg:mt-0 mt-4">
@@ -145,12 +160,14 @@ const Footer = () => {
           </h1>
           <p className="lg:max-w-[25rem] max-w-[22rem] font-quicksand mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni saepe aspernatur.</p>
           <div className="items-center gap-1.5 mt-4 justify-center">
-            <form className='flex flex-col'>
+            <form className='flex flex-col' >
               <input
-                className='p-3 rounded-sm text-white  focus:outline-none font-quicksand lg:w-[22rem] w-[19rem]'
+                className='p-3 rounded-sm text-white focus:outline-none  font-quicksand lg:w-[22rem] w-[19rem]'
                 placeholder='Email Adress'
                 type='email'
                 required
+                value={newletterInfo.email}
+                onChange={handleInputChange}
                 name='email'
                 style={{ backgroundColor: '#003366', color: 'white' }}
               />
@@ -158,7 +175,11 @@ const Footer = () => {
                 type='submit'
                 className='lg:w-[22rem] w-[19rem] mt-4 bg-primary p-2 font-quicksand text-white rounded-md'
               >
-                Submit
+                {!loading ? (
+                  "Submit"
+                ) : (
+                  "Submitting..."
+                )}
               </button>
             </form>
           </div>
