@@ -7,6 +7,7 @@ import WhyChooseUs from './components/choose'
 import Join from "./components/join"
 import Blogs from "./components/blog";
 import Footer from './components/footer'
+import ScrollToTopButton from './components/scroll'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <WhyChooseUs />
       <Join />
       <Blogs />
+      <ScrollToTopButton/>
       <Footer/>
     </div>
   )
