@@ -15,7 +15,7 @@ export const Card = ({ imageSrc, title, description, btn }) => {
             </div>
 
             <div className='flex items-center gap-2 px-6 py-4 -mt-6 mb-4'>
-                <p className="font-quicksand text-md text-primary">{btn}</p>
+                <button className="font-quicksand text-md text-primary">{btn}</button>
                 <BsArrowRight className='text-primary' />
             </div>
         </div>
@@ -40,16 +40,16 @@ export const Events = ({ imageSrc, title, date, location, btn }) => {
             </p>
 
             <div className='flex items-center gap-2 px-6 py-4 text-center justify-center mb-4'>
-                <p className=" cursor-pointer hover:bg-primary hover:text-white hover:border-primary font-quicksand border border-gray-600 border-t-2 pl-24 pr-24 text-center rounded-md p-2 text-md text-primary">
+                <button className=" cursor-pointer hover:bg-primary hover:text-white hover:border-primary font-quicksand border border-gray-600 border-t-2 pl-24 pr-24 text-center rounded-md p-2 text-md text-primary">
                     {btn}
-                </p>
+                </button>
             </div>
         </div>
     );
 };
 
 
-export const Blogs = ({ imageSrc, title, date, author, description, btn }) => {
+export const Blogs = ({ imageSrc, title, date, author, description, btn, handleButtonClick }) => {
     return (
         <div className="max-w-sm bg-white rounded-md overflow-hidden shadow-xl mt-4">
             <img className="w-full" src={imageSrc} alt={title} />
@@ -71,9 +71,10 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn }) => {
                 {description}
             </p>
             <div className=' px-4 py-4'>
-                <p className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 text-md">
+                <button onClick={handleButtonClick}
+                    className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 text-md">
                     {btn}
-                </p>
+                </button>
             </div>
         </div>
     );

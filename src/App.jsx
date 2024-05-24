@@ -5,40 +5,46 @@ import About from './components/about';
 import Courses from './components/courses';
 import WhyChooseUs from './components/choose';
 import Join from "./components/join";
-import Blogs from "./components/blog";
+import Blog from "./components/blog";
 import Footer from './components/footer';
 import ScrollToTopButton from './components/scroll';
+import Blogs from "./pages/blogs/Blogs"
 import Program from "./pages/classroom/program";
 import Course from './pages/classroom/course';
 
 const App = () => {
   const [isClassroomOpen, setIsClassroomOpen] = useState(false);
-  const [activePage, setActivePage] = useState('program');
+  const [showComponents, setShowComponents] = useState(true);
+  const [showBlogs, setShowBlogs] = useState(false);
+  
+  // const [activePage, setActivePage] = useState('program');
 
-  const toggleClassroom = () => {
-    setIsClassroomOpen(!isClassroomOpen);
-    setActivePage('program');
+  // const toggleClassroom = () => {
+  //   setIsClassroomOpen(!isClassroomOpen);
+  //   setActivePage('program');
+  // };
+
+  const handleButtonClick = () => {
+    setShowComponents(false);
+    setShowBlogs(true);
   };
 
   return (
     <div>
-      <Navigation isClassroomOpen={isClassroomOpen} toggleClassroom={toggleClassroom} setActivePage={setActivePage} />
-
-      {isClassroomOpen ? (
-        activePage === 'program' ? <Program /> : <Course />
-      ) : (
+      <Navigation />
+      {showComponents && (
         <>
           <LandingPage />
           <Courses />
           <About />
           <WhyChooseUs />
           <Join />
-          <Blogs />
-          <Footer />
-          <ScrollToTopButton />
-
+          <Blog handleButtonClick={handleButtonClick} />
         </>
       )}
+      {showBlogs && <Blogs />}
+      <ScrollToTopButton />
+      <Footer />
     </div>
   );
 }

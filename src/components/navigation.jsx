@@ -15,7 +15,7 @@ const scrollTo = (id) => {
 };
 
 
-const Navigation = ({ isClassroomOpen, toggleClassroom,setActivePage  }) => {
+const Navigation = ({ isClassroomOpen, toggleClassroom, setActivePage }) => {
 
     return (
         <Disclosure as="nav" className="fixed shadow-lg w-full z-20 transition-colors duration-300 ease-in-out bg-white">
@@ -50,7 +50,7 @@ const Navigation = ({ isClassroomOpen, toggleClassroom,setActivePage  }) => {
                                                 My program
                                             </button>
                                             <button
-                                               onClick={() => setActivePage('course')}
+                                                onClick={() => setActivePage('course')}
                                                 className=" font-quicksand"
                                             >
                                                 Courses
