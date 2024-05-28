@@ -15,7 +15,7 @@ export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) =
             </div>
 
             <div className='flex items-center gap-2 px-6 py-4 -mt-6 mb-4'>
-                <button onClick={handleCourseClick} className="font-quicksand lg:text-md text-xs text-primary">{btn}</button>
+                <button onClick={handleCourseClick} className="font-quicksand lg:text-base text-xs text-primary">{btn}</button>
                 <BsArrowRight className='text-primary' />
             </div>
         </div>
