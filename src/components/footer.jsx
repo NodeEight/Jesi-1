@@ -93,7 +93,7 @@ const Footer = () => {
             src={Logo}
             className="w-18 h-16"
           />
-          <p className="font-quicksand text-left mt-10 font-medium mb-4 lg:text-sm text-sm lg:max-w-[30rem] max-w-[23rem]">
+          <p className="font-quicksand text-left mt-10 font-medium mb-4 lg:text-sm text-xs lg:max-w-[30rem] max-w-[23rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, a neque. Saepe, molestiae? Modi
             blanditiis adipisci laborum laudantium repellendus natus quis nemo ad tempora asperiores autem,
             maxime reprehenderit, corrupti ex.
@@ -126,7 +126,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="font-medium lg:p-1.5 p-1 font-quicksand text-sm">
+                <div className="font-medium lg:p-1.5 p-1 font-quicksand lg:text-sm text-xs">
                   {item.name}
                 </div>
               </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="font-medium lg:p-1.5 p-1 font-quicksand text-sm">
+                <div className="font-medium lg:p-1.5 p-1 font-quicksand lg:text-sm text-xs">
                   {item.name}
                 </div>
               </a>
@@ -158,7 +158,7 @@ const Footer = () => {
           <h1 className="font-quicksand text-left font-bold lg:text-3xl">
             Newsletter
           </h1>
-          <p className="lg:max-w-[25rem] max-w-[22rem] font-quicksand mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni saepe aspernatur.</p>
+          <p className="lg:max-w-[25rem] max-w-[21rem] font-quicksand mt-3 lg:text-base text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni saepe aspernatur.</p>
           <div className="items-center gap-1.5 mt-4 justify-center">
             <form className='flex flex-col' >
               <input

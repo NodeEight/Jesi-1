@@ -5,8 +5,8 @@ import UIUX from "../assets/uiux.png";
 import DGM from "../assets/dig.png";
 import { Card } from './utils';
 
-const Courses = () => {
-    
+const Courses = ({ handleCourseClick }) => {
+
     const data = [
         {
             id: 1,
@@ -74,11 +74,11 @@ const Courses = () => {
             </div>
             <div className="flex flex-wrap mt-24 lg:m-24 gap-8 grid lg:grid-cols-3 grid-cols-1">
                 {data.map((item) => (
-                    <Card key={item.id} {...item} />
+                    <Card key={item.id} {...item} handleCourseClick={handleCourseClick} />
                 ))}
             </div>
             <div className="flex lg:justify-end justify-center lg:pr-[12rem] lg:mt-0 mt-7">
-                <button className='w-[15rem] p-3 rounded-md text-white font-quicksand text-center whitespace-nowrap bg-primary '>
+                <button onClick={handleCourseClick} className='w-[15rem] p-3 rounded-md text-white lg:text-base text-sm font-quicksand text-center whitespace-nowrap bg-primary '>
                     View All Courses
                 </button>
             </div>

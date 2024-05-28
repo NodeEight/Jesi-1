@@ -13,7 +13,7 @@ const About = () => {
             <div className="relative z-10">
                 <h1 className="text-gray-900 relative z-10 mt-6 font-bold lg:text-lg text-sm font-quicksand">ABOUT SKILLSLIFT</h1>
                 <p className='lg:mt-24 mt-8 font-bold font-quicksand lg:text-5xl text-2xl '>The Place where dreams are Achieved</p>
-                <p className='lg:mt-12 mt-2 font-quicksand lg:text-md text-sm font-medium'>
+                <p className='lg:mt-12 mt-2 font-quicksand lg:text-md  text-xs font-medium'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid mollitia
                     quaerat iure minus. Ratione id porro reprehenderit, nisi, assumenda ipsum consequatur laboriosam
                     distinctio corporis voluptatibus doloremque ducimus minima placeat repellat numquam quis!
@@ -23,7 +23,7 @@ const About = () => {
                         <RiLightbulbFlashLine className="icon" />
                         <div className=''>
                             <h1 className='font-quicksand font-bold lg:text-2xl text-xl mb-2 -mt-2'>Our Mission</h1>
-                            <p className='font-quicksand lg:text-base text-sm'>
+                            <p className='font-quicksand lg:text-base  text-xs'>
 
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Delectus, hic. Non sit quidem, praesentium rerum illum vitae quisquam?
@@ -34,14 +34,14 @@ const About = () => {
                         <BiTargetLock className="icon" />
                         <div className=''>
                             <h1 className='font-quicksand font-bold lg:text-2xl text-xl  mb-2 -mt-2'>Our Vision</h1>
-                            <p className='font-quicksand lg:text-base text-sm'>
+                            <p className='font-quicksand lg:text-base  text-xs'>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Delectus, hic. Non sit quidem, praesentium rerum illum vitae quisquam?
                             </p>
                         </div>
                     </div>
                 </div>
-                <button className='lg:mt-[3rem] mt-4 lg:ml-0 ml-14 rounded-md text-white font-quicksand bg-primary lg:p-3 p-2 lg:text-base text-sm'>
+                <button className='lg:mt-[3rem] mt-5 lg:mb-0 mb-4 lg:ml-0 ml-14 rounded-md text-white font-quicksand bg-primary lg:p-3 p-2 lg:text-base text-xs'>
                     Read More About Us
                 </button>
             </div>

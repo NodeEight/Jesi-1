@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
       <div className='mt-12'>
         <h1 className="font-quicksand max-w-[10rem] -mt-6 font-bold lg:text-lg text-sm">WHY CHOOSE SKILLSLIFT</h1>
         <p className='lg:mt-24 mt-8 font-bold font-quicksand lg:text-5xl text-2xl'>Grow Your Skills, Define Your Bright Future</p>
-        <p className='lg:mt-8 mt-2 font-quicksand lg:text-md text-sm '>
+        <p className='lg:mt-8 mt-2 font-quicksand lg:text-md text-xs '>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Necessitatibus sequi quasi magni laboriosam est deleniti amet
           saepe beatae itaque, autem sint quidem sunt minima. Dolorum labore
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
           magni, tenetur, facilis fugiat suscipit temporibus voluptate nobis
           recusandae repudiandae cum perspiciatis incidunt. Corrupti fugit sed sunt?
         </p>
-        <button className='bg-primary p-3 lg:mt-12 mt-8 lg:mb-0 mb-12 text-white font-quicksand rounded-md pl-6 pr-6'>
+        <button className='bg-primary p-3 lg:text-base text-xs lg:mt-12 mt-8 lg:mb-0 mb-12 text-white font-quicksand rounded-md pl-6 pr-6'>
           Choose A Career
         </button>
       </div>
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
         <div>
           {details.map((item, index) => (
             <div key={index} className="m-12">
-              <p style={{ backgroundColor: item.color, marginLeft: item.size }} className="text-white pl-4 flex items-center gap-2 p-2 font-quicksand whitespace-nowrap w-[13rem] rounded-sm">
+              <p style={{ backgroundColor: item.color, marginLeft: item.size }} className="text-white pl-4 flex items-center gap-2 p-2 font-quicksand lg:text-base text-xs whitespace-nowrap w-[13rem] rounded-sm">
                 <GoDotFill />
                 {item.name} </p>
             </div>
