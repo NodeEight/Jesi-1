@@ -5,8 +5,8 @@ const LandingPage = () => {
     return (
         <div id='home' className="relative  h-screen grid lg:grid-cols-2 lg:pl-12 lg:pr-12 pl-8 pr-8">
 
-            <div className="rightSection lg:-mt-[8rem] mt-[7rem]">
-                <h1 className='font-bold lg:text-6xl text-2xl lg:mb-12 font-quicksand'>
+            <div className="rightSection lg:-mt-[5rem] mt-[7rem]">
+                <h1 className='font-bold lg:text-6xl text-2xl lg:mb-12  font-quicksand'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h1>
                 <p className='font-quicksand lg:text-lg text-sm mt-4 lg:mt-0 lg:pr-0 pr-2'>
@@ -19,7 +19,7 @@ const LandingPage = () => {
                     Learn More
                 </button>
             </div>
-            <div className="flex items-center justify-center bounce lg:-mt-22 mt-8">
+            <div className="flex items-center justify-center bounce lg:mt-32 mt-8">
                 <img
                     src={LandingImage}
                     className='rounded-full '

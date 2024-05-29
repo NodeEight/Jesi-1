@@ -26,7 +26,7 @@ const CategoryItem = ({ category, isExpanded, toggleExpand }) => {
                 </div>
             </div>
             {isExpanded && (
-                <div className="pl-8 pr-3 pb-3">
+                <div className="pl-8 pr-3 pb-3 lg:text-base text-xs">
                     {category.children.map((child, index) => (
                         <p key={index}>{child}</p>
                     ))}
