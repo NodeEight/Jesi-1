@@ -1,6 +1,8 @@
 import React from 'react';
 import { CiClock1 } from "react-icons/ci";
 import { IoCalendarClearOutline } from "react-icons/io5";
+import { MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 export const BlogPosts = ({ posts }) => {
     return (
@@ -99,3 +101,46 @@ export const BlogPostsPreviews = ({ posts }) => {
         </div>
     );
 };
+
+export const CategoryItem = ({ category, isExpanded, toggleExpand }) => {
+    return (
+        <div className="flex flex-col">
+            <div
+                key={category.id}
+                className="flex items-center pb-3"
+                onClick={() => toggleExpand(category.id)}
+            >
+                <div className="flex items-center justify-between w-full bg-gray-200 px-4 py-2 rounded">
+                    <div className="flex items-center gap-4 lg:text-sm text-xs">
+                        <p>{category.name}</p>
+                        <p>{category.count}</p>
+                    </div>
+                    <div className="cursor-pointer">
+                        {isExpanded ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
+                    </div>
+                </div>
+            </div>
+            {isExpanded && (
+                <div className="pl-8 pr-3 pb-3 lg:text-base text-xs">
+                    {category.children.map((child, index) => (
+                        <p key={index}>{child}</p>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
+
+export const RelatedArticles = ({ image, description, btn }) => {
+    return (
+        <div className='flex flex-col font-quicksand mt-4'>
+            <div className='flex items-center gap-4'>
+                <img src={image} alt="" className='object-cover w-32 h-28 rounded-lg' />
+                <div>
+                    <p className='max-w-[22rem] lg:text-sm text-xs'>{description}</p>
+                    <p className='text-primary font-medium mt-2 lg:text-sm text-xs'>{btn}</p>
+                </div>
+            </div>
+        </div>
+    )
+}

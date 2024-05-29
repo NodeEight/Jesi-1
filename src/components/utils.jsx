@@ -72,7 +72,7 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
             </p>
             <div className=' px-4 py-4'>
                 <button onClick={handleButtonClick}
-                    className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 lg:text-md text-xs ">
+                    className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 lg:text-base text-xs ">
                     {btn}
                 </button>
             </div>

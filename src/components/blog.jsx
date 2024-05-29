@@ -38,7 +38,6 @@ const Blog = ({ handleButtonClick }) => {
         },
     ]
 
-
     return (
         <div id="blogs" className="relative pl-12 pr-12 courseMain pb-12">
             <p className="font-quicksand mt-8 text-center font-bold lg:text-lg text-sm">
