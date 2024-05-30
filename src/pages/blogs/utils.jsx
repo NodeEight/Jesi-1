@@ -3,12 +3,14 @@ import { CiClock1 } from "react-icons/ci";
 import { IoCalendarClearOutline } from "react-icons/io5";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { GoPerson } from "react-icons/go";
+import { RiMessage2Line } from "react-icons/ri";
 
 export const BlogPosts = ({ posts }) => {
     return (
         <div className="mx-auto mt-8 grid font-quicksand pb-4 grid-cols-1 gap-x-8 lg:gap-y-10 gap-y-12 lg:p-0 p-6  lg:grid-cols-1">
             {posts.map((post) => (
-                <article key={post.id} className="flex pb-4 flex-col items-center justify-between border border-gray-300">
+                <article key={post.id} className="flex pb-4 flex-col items-center justify-between border border-gray-200">
                     <div className="relative w-full lg:w-[36rem] lg:h-[25rem] h-[12rem]">
                         <img
                             src={post.imageUrl}
@@ -46,6 +48,56 @@ export const BlogPosts = ({ posts }) => {
                                 {post.time}
                             </p>
                         </div>
+                    </div>
+                </article>
+            ))}
+        </div>
+    );
+};
+
+export const BlogRead = ({ posts }) => {
+    return (
+        <div className="mx-auto mt-8 grid  font-quicksand pb-4 grid-cols-1 gap-x-8 lg:gap-y-10 gap-y-12 lg:p-0 p-6  lg:grid-cols-1">
+            {posts.map((post) => (
+                <article key={post.id} className="flex pb-4 flex-col  items-center justify-between border border-gray-200">
+                    <div className="relative w-full lg:w-[36rem] lg:h-[25rem] h-[12rem]">
+                        <img
+                            src={post.imageUrl}
+                            alt=""
+                            className="absolute inset-0 h-full w-full rounded-sm bg-gray-50 object-cover"
+                        />
+                        <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-50/10" />
+                    </div>
+                    <div className="relative mt-4 lg:text-sm text-xs justify-between grid grid-cols-2 lg:grid-cols-4 w-full gap-x-4 lg:pl-5 pl-8 lg:pr-5 lg:gap-1 gap-3">
+                        <p className="text-gray-600 flex items-center gap-2">
+                            <GoPerson className='text-primary' />
+                            {post.author}
+                        </p>
+
+                        <p className="text-gray-600 flex items-center gap-2">
+                            <IoCalendarClearOutline className='text-primary' />
+                            {post.publishedDate}
+                        </p>
+                        <p className="text-gray-600 flex items-center gap-2">
+                            <CiClock1 className='text-primary' />
+                            {post.time}
+                        </p>
+                        <p className="text-gray-600 flex items-center gap-2">
+                            <RiMessage2Line className='text-primary' />
+                            {post.comment}
+                        </p>
+                    </div>
+                    <div className="max-w-xl">
+                        <div className="group relative  pl-[1rem]">
+                            <h3 className="mt-6 lg:max-w-[30rem] text-lg font-bold leading-6 text-gray-900 group-hover:text-gray-600" >
+                                <a href={post.href}>
+                                    <span className="absolute inset-0" />
+                                    {post.title}
+                                </a>
+                            </h3>
+                            <p className="mt-4 min-h-[35rem] line-clamp-3 lg:pb-32 lg:text-sm text-xs pr-4 lg:p-0 leading-6 text-gray-600">{post.description}</p>
+                        </div>
+
                     </div>
                 </article>
             ))}

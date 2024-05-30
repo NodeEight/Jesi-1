@@ -4,7 +4,7 @@ import DTS from "../assets/data.png"
 import UIUX from "../assets/uiux.png"
 import { Blogs } from "./utils"
 
-const Blog = ({ handleButtonClick }) => {
+const Blog = ({ handleButtonClick, handleBlogDetails }) => {
 
     const data = [
         {
@@ -56,7 +56,7 @@ const Blog = ({ handleButtonClick }) => {
 
             <div className="flex z-10 flex-wrap lg:mt-24 mt-6 lg:m-24 gap-8 grid lg:grid-cols-3">
                 {data.map((item) => (
-                    <Blogs key={item.id} {...item} handleButtonClick={handleButtonClick} />
+                    <Blogs key={item.id} {...item} handleButtonClick={handleButtonClick} handleBlogDetails={handleBlogDetails} />
                 ))}
             </div>
         </div>

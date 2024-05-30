@@ -4,8 +4,9 @@ import { BlogPosts, CategoryItem, RelatedArticles } from './utils';
 import Image1 from "../../assets/dig.png";
 import Image2 from "../../assets/data.png";
 import Image3 from "../../assets/mkt1.png";
+import Content from "./details/Content";
 
-const Blogs = () => {
+const Blogs = ({ showBlogDetails }) => {
     const [expandedCategory, setExpandedCategory] = useState(null);
 
     const toggleExpand = (categoryId) => {
@@ -85,19 +86,31 @@ const Blogs = () => {
     ];
 
     return (
-        <div id='home' className="relative h-full grid lg:grid-cols-2 lg:pb-12 pb-2" style={{ backgroundColor: "rgba(0, 128, 128, 0.1)" }} >
+        <div id='home' className="relative h-full grid lg:grid-cols-2 lg:pb-12 pb-2"
+            style={{ backgroundColor: showBlogDetails ? "white" : "rgba(0, 128, 128, 0.1)" }}
+        >
             <div className="flex items-center justify-center  ">
-                <BlogPosts posts={posts} />
+                {showBlogDetails ? (
+                    <Content />
+                ) : (
+                    <BlogPosts posts={posts} />
+                )}
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center lg:mt-12 justify-center">
                 <div className='lg:p-0 p-3'>
                     <form className='flex items-center' >
-                        <input className='p-3 rounded-sm lg:text-sm text-xs text-white rounded-md focus:outline-none font-quicksand lg:w-[30rem] lg:w-[19rem] w-[20rem]' placeholder='Search keyword......' type='email' required name='email' />
-                        <button type='submit' className='flex items-center justify-center bg-primary lg:p-4 p-3 font-quicksand text-white' >
+                        <input
+                            className={`lg:p-4 p-3 lg:text-sm text-xs text-white focus:outline-none font-quicksand lg:w-[30rem] lg:w-[19rem] w-[20rem] ${showBlogDetails ? 'border border-gray-200' : ''}`}
+                            placeholder='Search keyword......'
+                            type='email'
+                            required
+                            name='email'
+                        />
+                        <button type='submit' className='flex items-center justify-center bg-primary lg:p-5 p-3 font-quicksand text-white' >
                             <IoSearchOutline />
                         </button>
                     </form>
-                    <div className='bg-white mt-4 flex flex-col font-quicksand'>
+                    <div className={`bg-white mt-4 flex flex-col font-quicksand ${showBlogDetails ? 'border border-gray-200' : ''}`}>
                         <h1 className='font-bold items-center justify-center flex text-xl mt-2 mb-4'>Categories</h1>
                         <div className="pl-3 pr-3 pb-6 cursor-pointer">
                             {categories.map((category) => (
@@ -111,7 +124,7 @@ const Blogs = () => {
                         </div>
                     </div>
 
-                    <div className='bg-white mt-16 flex flex-col font-quicksand'>
+                    <div className={`bg-white mt-16 flex flex-col font-quicksand ${showBlogDetails ? 'border border-gray-200' : ''}`}>
                         <h1 className='font-bold items-center justify-center flex text-xl mt-2 mb-4'>Categories</h1>
                         <div className="pl-3 pr-3 pb-6">
                             {relatedArticles.map((item) => (

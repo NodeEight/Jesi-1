@@ -49,7 +49,7 @@ export const Events = ({ imageSrc, title, date, location, btn }) => {
 };
 
 
-export const Blogs = ({ imageSrc, title, date, author, description, btn, handleButtonClick }) => {
+export const Blogs = ({ imageSrc, title, date, author, description, btn, handleBlogDetails }) => {
     return (
         <div className="max-w-sm bg-white rounded-md overflow-hidden shadow-xl mt-4">
             <img className="w-full" src={imageSrc} alt={title} />
@@ -71,7 +71,7 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
                 {description}
             </p>
             <div className=' px-4 py-4'>
-                <button onClick={handleButtonClick}
+                <button onClick={handleBlogDetails}
                     className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 lg:text-base text-xs ">
                     {btn}
                 </button>
