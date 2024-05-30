@@ -66,7 +66,7 @@ const Chats = () => {
                       <span>{item.date}</span>
                     </p>
                   </div>
-                  <div className='bg-yellow-300 text-white w-16 h-7 text-center flex items-center justify-center '>
+                  <div className='bg-yellow-400 text-white w-16 h-7 text-center flex items-center justify-center '>
                     <p>{item.icon}</p>
                     <p className='lg:text-sm text-xs'>{item.action}</p>
                   </div>
@@ -78,11 +78,11 @@ const Chats = () => {
             )
           })}
         </div>
-        <h1 className='font-bold lg:text-2xl lg:mt-8 '>Leave A Reply</h1>
+        <h1 className='font-bold lg:text-2xl lg:mt-8 mt-10'>Leave A Reply</h1>
         <p className='lg:text-sm text-xs mt-2'>Lorem ipsum dolor sit amet consectetur. Blandit nulla orci justo vivamus sed.</p>
         <div className='mt-6 lg:w-[36rem]'>
           <form className='flex flex-col'>
-            <div className='flex gap-1 w-full '>
+            <div className='flex gap-2 w-full '>
               <TextInput
                 placeholder="Name"
                 key={form.key('name')}
