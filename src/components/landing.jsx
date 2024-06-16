@@ -45,7 +45,7 @@ const LandingPage = () => {
 
             <div className="rightSection xl:-mt-[5rem] ">
                 <h1 className=' lg:text-4xl mb-8 text-2xl font-bold xl:mb-12 lg:mt-16 mt-32 font-quicksand'>
-                    Lorem ipsum dolor sit amet elit.<br/> <span ref={typedRef} className='text-primary'></span>
+                    Lorem ipsum dolor sit amet<br/> <span ref={typedRef} className='text-primary'></span>
                 </h1>
                 <p className='md:text-xs xl:text-lg text-sm font-quicksand md:mt-12 lg:mt-0 lg:pr-0 pr-2'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
