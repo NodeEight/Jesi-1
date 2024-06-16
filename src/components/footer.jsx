@@ -84,7 +84,7 @@ const Footer = () => {
 
   return (
     <section id="contact" className="relative w-full h-full pb-10" style={{ backgroundColor: "rgba(0, 128, 128, 0.1)" }}>
-      <div className="flex flex-col md:flex-row align-center justify-around pt-[6rem] pb-2 w-full ">
+      <div className="flex flex-col md:flex-row align-center justify-around lg:pt-[2rem] pb-2 w-full ">
 
         <div className="flex flex-col justify-center items-center lg:mt-0 mt-4">
           <img

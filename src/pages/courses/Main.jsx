@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Blogs, CourseDetails } from './utils';
-import MKT1 from "../../assets/mkt1.png"
+import { CourseDetails } from './utils';
 import Course from "../../assets/rect.png"
 import Pers from "../../assets/pers.png"
 import { IoMdCheckboxOutline } from "react-icons/io";
@@ -11,25 +10,6 @@ import { BsEmojiSmile } from "react-icons/bs";
 
 const Main = () => {
 
-    const data = [
-        {
-            id: 1,
-            imageSrc: MKT1,
-            title: "Event's Name",
-            date: "Date",
-            instructor: "Instructor",
-            name: "Jane Doe",
-            courseMode: "Course Mode",
-            mode: "In-Person",
-            courseDuration: "Course Duration",
-            duration: "6 months",
-            venue: "Venue",
-            location: "Node Eight",
-            btn: "Enroll Now",
-            tag: "Free"
-
-        },
-    ]
 
     const coureDetails = [
         {
@@ -37,12 +17,11 @@ const Main = () => {
             imageSrc: Course,
             Pers: Pers,
             title: "Data Science Bootcamp 2023",
-            role: "Trainer",
-            name: "Jane Doe",
-            update: "Last Updated",
-            date: "10th  May, 2023",
             course: "Data Science",
-            instructor: "Instructor",
+            mode: "In Person",
+            duration: "6 months",
+            venue:"Node Eight",
+            
         },
     ]
 
@@ -98,15 +77,16 @@ const Main = () => {
 
     const [activeTab, setActiveTab] = useState(0);
 
-    const tabs = ['Overview', 'Curriculum', 'Instructor', 'Reviews'];
+    const tabs = ['Overview', 'Curriculum'];
+
     return (
-        <div id='home' className="relative h-full grid lg:grid-cols-2  lg:pb-0 pb-12 grid-cols-1 lg:gap-8  lg:p-8">
+        <div id='home' className="relative h-full flex lg:pb-48 pb-12  lg:p-8">
             <div className="flex flex-col items-center justify-center">
                 {coureDetails.map((item) => (
                     <CourseDetails key={item.id} {...item} />
                 ))}
                 <div className="flex flex-col items-center p-4 w-full font-quicksand">
-                    <div className="flex gap-0.5 mb-4">
+                    <div className="gap-0.5 mb-4 lg:-ml-[20rem] -ml-[12rem]">
                         {tabs.map((tab, index) => (
                             <button
                                 key={index}
@@ -170,7 +150,7 @@ const Main = () => {
                             })}
                         </div>
                     </div>
-                    <h1 className="font-bold  text-base lg:-ml-[28rem] -ml-[14rem] lg:mt-2 mt-4 lg:text-sm ">Basic Requirements</h1>
+                    <h1 className="font-bold  text-base lg:-ml-[28rem] -ml-[14rem] lg:mt-8 mt-4 lg:text-sm ">Basic Requirements</h1>
                     <div className='grid grid-cols-2 gap-2 justify-between lg:w-[36rem] w-[23rem]  p-2'>
                         {requirements.map((item, index) => {
                             return (
@@ -182,12 +162,6 @@ const Main = () => {
                         })}
                     </div>
                 </div>
-
-            </div>
-            <div className="flex items-center justify-center ">
-                {data.map((item) => (
-                    <Blogs key={item.id} {...item} />
-                ))}
             </div>
         </div>
     );

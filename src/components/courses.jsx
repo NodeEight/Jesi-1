@@ -2,7 +2,6 @@ import React from 'react';
 import MKT1 from "../assets/mkt1.png"
 import DTS from "../assets/data.png";
 import UIUX from "../assets/uiux.png";
-import DGM from "../assets/dig.png";
 import { Card } from './utils';
 
 const Courses = ({ handleCourseClick }) => {
@@ -40,7 +39,6 @@ const Courses = ({ handleCourseClick }) => {
 
         },
     ];
-
     return (
         <div id='courses' className="relative pl-12 pr-12 h-full w-full courseMain pb-12">
             <p className='font-quicksand font-bold lg:text-md text-sm lg:mt-0 mt-6'>COURSES</p>

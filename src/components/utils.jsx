@@ -10,11 +10,11 @@ export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) =
         <div className="max-w-sm rounded-md overflow-hidden shadow-xl mt-4">
             <img className="w-full" src={imageSrc} alt={title} />
             <div className="px-6 py-4 ">
-                <div className="font-bold lg:text-2xl text-xl mb-2 font-quicksand">{title}</div>
-                <p className="text-gray-700  text-xs font-quicksand text-md">{description}</p>
+                <div className="font-bold text-xl whitespace-nowrap lg:mb-4 mb-2 font-quicksand">{title}</div>
+                <p className="text-gray-700  text-xs font-quicksand text-md ">{description}</p>
             </div>
 
-            <div className='flex items-center gap-2 px-6 py-4 mt-6 mb-4'>
+            <div className='flex items-center gap-2 px-6 py-4  mb-4'>
                 <button onClick={handleCourseClick} className="font-quicksand text-xs text-primary">{btn}</button>
                 <BsArrowRight className='text-primary' />
             </div>

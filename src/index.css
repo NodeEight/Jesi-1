@@ -15,7 +15,9 @@
   /* align-items: center; */
   justify-content: center;
 }
-
+.partners{
+  line-height: 2;
+}
 /* Define the bounce animation */
 @keyframes bounce {
   0%,

@@ -39,9 +39,6 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <button className='lg:mt-[3rem] mt-5 lg:mb-0 mb-4 lg:ml-0 ml-14 text-xs rounded-md text-white font-quicksand bg-primary lg:p-3 p-2'>
-                    Read More About Us
-                </button>
             </div>
 
             {/* Right */}

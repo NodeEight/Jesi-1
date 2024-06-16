@@ -16,7 +16,7 @@ const LandingPage = () => {
                     quis distinctio.
                 </p>
                 <button className='lg:mt-8 mt-4 text-xs  bg-primary w-32 text-center lg:p-3 p-2 rounded-md text-white font-quicksand'>
-                    Learn More
+                    Enroll Now
                 </button>
             </div>
             <div className="flex items-center justify-center bounce lg:mt-32 mt-8">

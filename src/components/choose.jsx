@@ -4,7 +4,7 @@ import { GoDotFill } from "react-icons/go";
 
 const WhyChooseUs = () => {
   return (
-    <section className='relative w-full  h-full gap-2 bg-white grid lg:grid-cols-2 lg:pb-16  pb-14 pl-8 pr-12 pt-14'>
+    <section className='relative w-full h-full gap-2 bg-white grid lg:grid-cols-2 lg:pb-48 pb-48 pl-8 pr-12 pt-14'>
       <div >
         <h1 className="font-quicksand max-w-[10rem] -mt-6 font-bold lg:text-lg text-sm">WHY CHOOSE SKILLSLIFT</h1>
         <p className='lg:mt-14 mt-8 font-bold font-quicksand lg:text-4xl text-2xl'>Grow Your Skills, Define Your Bright Future</p>
@@ -16,9 +16,6 @@ const WhyChooseUs = () => {
           magni, tenetur, facilis fugiat suscipit temporibus voluptate nobis
           recusandae repudiandae cum perspiciatis incidunt. Corrupti fugit sed sunt?
         </p>
-        <button className='bg-primary p-3 text-xs lg:mt-12 mt-8 lg:mb-0 mb-12 text-white font-quicksand rounded-md pl-6 pr-6'>
-          Choose A Career
-        </button>
       </div>
 
       <div className='grid lg:grid-cols-2 mt-12'>
