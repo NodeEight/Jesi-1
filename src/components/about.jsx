@@ -10,9 +10,9 @@ const About = () => {
             <div className="bg-green_bg opacity-10 absolute inset-0 z-0"></div>
             {/* Left section */}
             <div className="relative z-10">
-                <h1 className="text-gray-900 relative z-10 mt-6 font-bold lg:text-lg text-sm font-quicksand">ABOUT SKILLSLIFT</h1>
-                <p className='lg:mt-24 mt-8 font-bold font-quicksand lg:text-5xl text-2xl '>The Place where dreams are Achieved</p>
-                <p className='lg:mt-12 mt-2 font-quicksand lg:text-md text-sm font-medium'>
+                <h1 className="text-gray-900 relative z-10 mt-6 font-bold  text-sm font-quicksand">ABOUT SKILLSLIFT</h1>
+                <p className='lg:mt-12 mt-3 font-bold font-quicksand lg:text-4xl text-2xl '>The Place where dreams are Achieved</p>
+                <p className='lg:mt-12 mt-2 mb-6 font-quicksand lg:text-md text-sm font-medium'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid mollitia
                     quaerat iure minus. Ratione id porro reprehenderit, nisi, assumenda ipsum consequatur laboriosam
                     distinctio corporis voluptatibus doloremque ducimus minima placeat repellat numquam quis!
@@ -39,14 +39,14 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <button className='lg:mt-[3rem] mt-5 lg:mb-0 mb-4 lg:ml-0 ml-14 lg:text-md text-sm rounded-md text-white font-quicksand bg-primary lg:p-3 p-2'>
+                <button className='lg:mt-[3rem] mt-5 lg:mb-0 mb-4 lg:ml-0 ml-14 text-xs rounded-md text-white font-quicksand bg-primary lg:p-3 p-2'>
                     Read More About Us
                 </button>
             </div>
 
             {/* Right */}
             <div className="items-center justify-center relative z-10 lg:mt-0 mt-4 md:pb-[4rem]">
-                <img src={About1} className='lg:mt-12 lg:ml-[10rem] ml-10 ' />
+                <img src={About1} className='lg:mt-12 lg:ml-[7rem] ml-10 ' />
                 <img src={About2} className='lg:ml-[3rem] lg:mt-2 mt-1' />
             </div>
         </div>

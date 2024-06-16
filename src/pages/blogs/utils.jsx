@@ -32,7 +32,7 @@ export const BlogPosts = ({ posts }) => {
                             <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600" >
                                 <a href={post.href}>
                                     <span className="absolute inset-0" />
-                                    {post.title}
+                                    {post.title} 
                                 </a>
                             </h3>
                             <p className="mt-4 line-clamp-3 lg:text-sm text-xs pr-4 lg:p-0 leading-6 text-gray-600">{post.description}</p>

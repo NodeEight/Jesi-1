@@ -9,23 +9,16 @@ import Join from "./components/join";
 import Blog from "./components/blog";
 import Footer from './components/footer';
 import ScrollToTopButton from './components/scroll';
-// import Blogs from "./pages/blogs/Blogs"
 
 const App = () => {
   const [showComponents, setShowComponents] = useState(true);
-  // const [showBlogs, setShowBlogs] = useState(false);
   const [showCourses, setShowCourses] = useState(false);
-  const [showBlogDetails, setShowBlogDetails] = useState(false);
 
   const handleCourseClick = () => {
     setShowComponents(false);
     setShowCourses(true);
   }
 
-  // const handleBlogDetails = () => {
-  //   setShowComponents(false);
-  //   setShowBlogDetails(true)
-  // }
 
   return (
     <div className='w-full h-full'>
@@ -40,7 +33,6 @@ const App = () => {
           <Blog />
         </>
       )}
-      {/* {showBlogs || showBlogDetails ? <Blogs showBlogDetails={showBlogDetails} /> : null} */}
       {showCourses && <CoursePage />}
       <ScrollToTopButton />
       <Footer />

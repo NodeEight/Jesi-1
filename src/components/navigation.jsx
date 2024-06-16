@@ -12,7 +12,6 @@ const scrollTo = (id) => {
     }
 };
 
-
 const Navigation = ({ showCourses }) => {
 
     return (
@@ -40,18 +39,20 @@ const Navigation = ({ showCourses }) => {
                                 </a>
 
                             </div>
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 text-gray-900">
+                            <div className="absolute inset-y-0 text-sm right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 text-gray-900">
                                 <div className="flex items-center gap-12">
                                     <div className="hide sm:ml-6 sm:block">
                                         <div className="flex space-x-8">
                                             <button
                                                 onClick={() => scrollTo('home')}
-                                                className=" font-quicksand" >
+                                                className=" font-quicksand"
+                                            >
                                                 Home
                                             </button>
                                             <button
                                                 onClick={() => scrollTo('courses')}
-                                                className="font-quicksand"  >
+                                                className="font-quicksand"
+                                            >
                                                 Courses
                                             </button>
                                             <button onClick={() => scrollTo('blogs')}
@@ -60,7 +61,8 @@ const Navigation = ({ showCourses }) => {
                                             </button>
                                             <button
                                                 onClick={() => scrollTo('contact')}
-                                                className=" font-quicksand" >
+                                                className=" font-quicksand"
+                                            >
                                                 Contact
                                             </button>
                                         </div>
@@ -70,28 +72,28 @@ const Navigation = ({ showCourses }) => {
                         </div>
                     </div>
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 px-2 pt-2 pb-3  justify-start">
+                        <div className="space-y-1 px-2 pt-2 pb-3 text-xs justify-start">
                             <button
                                 onClick={() => scrollTo('home')}
-                                className="block text-center font-quicksand pl-6 pr-6 text-base bg-transparent py-2 rounded-md text-gray-700"
+                                className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
                             >
                                 Home
                             </button>
                             <button
                                 onClick={() => scrollTo('courses')}
-                                className="block text-center font-quicksand pl-6 pr-6 text-base bg-transparent py-2 rounded-md text-gray-700 "
+                                className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700 "
                             >
                                 Courses
                             </button>
                             <button
                                 onClick={() => scrollTo('blogs')}
-                                className="block text-center font-quicksand pl-6 pr-6 text-base bg-transparent py-2 rounded-md text-gray-700 "
+                                className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700 "
                             >
                                 Blogs
                             </button>
                             <button
                                 onClick={() => scrollTo('contact')}
-                                className="block text-center  font-quicksand pl-6 pr-6 text-base bg-transparent py-2 rounded-md text-gray-700 "
+                                className="block text-center  font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700 "
                             >
                                 Contact
                             </button>
