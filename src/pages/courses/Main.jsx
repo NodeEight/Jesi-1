@@ -10,7 +10,6 @@ import { BsEmojiSmile } from "react-icons/bs";
 
 const Main = () => {
 
-
     const coureDetails = [
         {
             id: 1,
