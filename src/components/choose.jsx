@@ -4,8 +4,8 @@ import { GoDotFill } from "react-icons/go";
 
 const WhyChooseUs = () => {
   return (
-    <section className="relative w-full bg-white lg:h-screen h-full grid lg:pb-0 pb-14 lg:grid-cols-2 pl-12 pr-12 pt-12">
-      <div className='mt-12'>
+    <section className='relative w-full h-full gap-2 bg-white grid lg:grid-cols-2 lg:pb-0 pb-14 pl-8 pr-12 pt-12'>
+      <div >
         <h1 className="font-quicksand max-w-[10rem] -mt-6 font-bold lg:text-lg text-sm">WHY CHOOSE SKILLSLIFT</h1>
         <p className='lg:mt-24 mt-8 font-bold font-quicksand lg:text-5xl text-2xl'>Grow Your Skills, Define Your Bright Future</p>
         <p className='lg:mt-8 mt-2 font-quicksand lg:text-md text-xs '>
@@ -21,19 +21,20 @@ const WhyChooseUs = () => {
         </button>
       </div>
 
-      <div className='chooseUs'>
+      <div className='grid lg:grid-cols-2 mt-12'>
         <div>
           {details.map((item, index) => (
             <div key={index} className="m-12">
-              <p style={{ backgroundColor: item.color, marginLeft: item.size }} className="text-white pl-4 flex items-center gap-2 p-2 font-quicksand lg:text-base text-xs whitespace-nowrap w-[13rem] rounded-sm">
+              <p style={{ backgroundColor: item.color, marginLeft: item.size }} className="text-white -pl-6 flex text-xs items-center  p-2 font-quicksand lg:text-base md:text-sm whitespace-nowrap w-[9rem] rounded-sm">
                 <GoDotFill />
-                {item.name} </p>
+                <span className="text-xs"> {item.name}</span>
+              </p>
             </div>
           ))}
         </div>
         <img
           src={Choose}
-          className='Image'
+        // className='md:w-[40rem]'
         />
       </div>
     </section>

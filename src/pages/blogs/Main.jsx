@@ -100,7 +100,7 @@ const Blogs = ({ showBlogDetails }) => {
                 <div className='lg:p-0 p-3'>
                     <form className='flex items-center' >
                         <input
-                            className={`lg:p-4 p-3 lg:text-sm text-xs text-white focus:outline-none font-quicksand lg:w-[30rem] lg:w-[19rem] w-[20rem] ${showBlogDetails ? 'border border-gray-200' : ''}`}
+                            className={`lg:p-4 p-3 lg:text-sm text-xs text-white focus:outline-none font-quicksand lg:w-[30rem] w-[20rem] ${showBlogDetails ? 'border border-gray-200' : ''}`}
                             placeholder='Search keyword......'
                             type='email'
                             required

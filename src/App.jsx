@@ -9,31 +9,26 @@ import Join from "./components/join";
 import Blog from "./components/blog";
 import Footer from './components/footer';
 import ScrollToTopButton from './components/scroll';
-import Blogs from "./pages/blogs/Blogs"
+// import Blogs from "./pages/blogs/Blogs"
 
 const App = () => {
   const [showComponents, setShowComponents] = useState(true);
-  const [showBlogs, setShowBlogs] = useState(false);
+  // const [showBlogs, setShowBlogs] = useState(false);
   const [showCourses, setShowCourses] = useState(false);
   const [showBlogDetails, setShowBlogDetails] = useState(false);
-
-  const handleButtonClick = () => {
-    setShowComponents(false);
-    setShowBlogs(true);
-  };
 
   const handleCourseClick = () => {
     setShowComponents(false);
     setShowCourses(true);
   }
 
-  const handleBlogDetails = () => {
-    setShowComponents(false);
-    setShowBlogDetails(true)
-  }
+  // const handleBlogDetails = () => {
+  //   setShowComponents(false);
+  //   setShowBlogDetails(true)
+  // }
 
   return (
-    <div>
+    <div className='w-full h-full'>
       <Navigation />
       {showComponents && (
         <>
@@ -42,10 +37,10 @@ const App = () => {
           <About />
           <WhyChooseUs />
           <Join />
-          <Blog handleButtonClick={handleButtonClick} handleBlogDetails={handleBlogDetails} />
+          <Blog />
         </>
       )}
-      {showBlogs || showBlogDetails ? <Blogs showBlogDetails={showBlogDetails} /> : null}
+      {/* {showBlogs || showBlogDetails ? <Blogs showBlogDetails={showBlogDetails} /> : null} */}
       {showCourses && <CoursePage />}
       <ScrollToTopButton />
       <Footer />
