@@ -61,9 +61,9 @@ const LandingPage = () => {
     }, []);
 
     return (
-        <div id='home' className="relative pb-2 font-quicksand h-full grid lg:grid-cols-2 items-center justify-center lg:pl-12 lg:pr-12 pl-8 pr-8">
+        <div id='home' className="relative pb-2 font-quicksand xl:h-screen lg:h-screen h-full grid lg:grid-cols-2 items-center justify-center lg:pl-12 lg:pr-12 pl-8 pr-8">
 
-            <div className="rightSection xl:-mt-[4.5rem] ">
+            <div className="rightSection xl:-mt[4.5rem] lg:mt-[4rem] ">
                 <h1 className='lg:text-4xl xl:ml-0 mb-8 text-xl font-bold xl:mb-12 lg:mt-16 mt-32 '>
                     Become a <span ref={typedRef} className='text-primary'></span> <br />in 6 to 12 months
                 </h1>
