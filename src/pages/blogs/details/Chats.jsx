@@ -107,7 +107,7 @@ const Chats = () => {
                 rows="4"
               />
             </div>
-            <button className='bg-primary w-[20rem] h-10 items-center justify-center mt-3 rounded-sm lg:text-sm text-xs flex items-center text-white'>
+            <button className='bg-primary w-[20rem] h-10 justify-center mt-3 rounded-sm lg:text-sm text-xs flex items-center text-white'>
               Send Message
             </button>
           </form>
