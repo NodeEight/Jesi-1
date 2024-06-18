@@ -9,13 +9,13 @@ export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) =
     return (
         <div className="max-w-sm rounded-md overflow-hidden shadow-xl mt-4">
             <img className="w-full" src={imageSrc} alt={title} />
-            <div className="px-6 py-4 mb-8">
-                <div className="font-bold lg:text-2xl text-xl mb-2 font-quicksand">{title}</div>
-                <p className="text-gray-700 lg:text-base text-xs font-quicksand text-md">{description}</p>
+            <div className="px-6 py-4 ">
+                <div className="font-bold text-xl whitespace-nowrap lg:mb-4 mb-2 font-quicksand">{title}</div>
+                <p className="text-gray-700  text-xs font-quicksand text-md ">{description}</p>
             </div>
 
-            <div className='flex items-center gap-2 px-6 py-4 -mt-6 mb-4'>
-                <button onClick={handleCourseClick} className="font-quicksand lg:text-base text-xs text-primary">{btn}</button>
+            <div className='flex items-center gap-2 px-6 py-4  mb-4'>
+                <button onClick={handleCourseClick} className="font-quicksand text-xs text-primary">{btn}</button>
                 <BsArrowRight className='text-primary' />
             </div>
         </div>
@@ -54,25 +54,25 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
         <div className="max-w-sm bg-white rounded-md overflow-hidden shadow-xl mt-4">
             <img className="w-full" src={imageSrc} alt={title} />
             <div className="px-6 text-center py-4 ">
-                <div className="font-bold lg:text-2xl text-xl mb-2 font-quicksand">{title}</div>
+                <div className="font-bold lg:text-xl text-xl mb-2 font-quicksand">{title}</div>
             </div>
-            <div className='flex lg:text-base text-xs items-center align-center gap-12 justify-center'>
+            <div className='flex text-xs items-center align-center gap-12 justify-center'>
                 <p className="flex font-quicksand items-center  align-center gap-2">
                     <GoPerson className="lg:text-xl text-lg text-primary" />
                     {author}
                 </p>
-                <p className="flex lg:text-base text-xs font-quicksand items-center  align-center gap-2">
+                <p className="flex  text-xs font-quicksand items-center  align-center gap-2">
                     <CiClock1 className="lg:text-xl text-lg text-primary" />
                     {date}
                 </p>
 
             </div>
-            <p className='font-quicksand lg:text-sm text-xs  pl-4 mt-4'>
+            <p className='font-quicksand text-xs  pl-4 mt-4'>
                 {description}
             </p>
             <div className=' px-4 py-4'>
                 <button onClick={handleBlogDetails}
-                    className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 lg:text-base text-xs ">
+                    className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 text-xs ">
                     {btn}
                 </button>
             </div>

@@ -83,17 +83,15 @@ const Footer = () => {
 
 
   return (
-    <section id="contact" className="relative w-full pb-10" style={{
-      backgroundColor: "rgba(0, 128, 128, 0.1)"
-    }}>
-      <div className="flex flex-col md:flex-row justify-around pt-6 pb-2 w-full">
+    <section id="contact" className="relative w-full h-full pb-10" style={{ backgroundColor: "rgba(0, 128, 128, 0.1)" }}>
+      <div className="flex flex-col md:flex-row align-center justify-around lg:pt-[2rem] pb-2 w-full ">
 
         <div className="flex flex-col justify-center items-center lg:mt-0 mt-4">
           <img
             src={Logo}
             className="w-18 h-16"
           />
-          <p className="font-quicksand text-left mt-10 font-medium mb-4 lg:text-sm text-xs lg:max-w-[30rem] max-w-[23rem]">
+          <p className="font-quicksand text-left mt-10 font-medium mb-4 text-xs lg:max-w-[25rem] max-w-[23rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, a neque. Saepe, molestiae? Modi
             blanditiis adipisci laborum laudantium repellendus natus quis nemo ad tempora asperiores autem,
             maxime reprehenderit, corrupti ex.
@@ -115,7 +113,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col lg:pl-0 pl-12 justify-center lg:mt-0 mt-4">
-          <h1 className="font-quicksand text-left font-bold lg:text-3xl">
+          <h1 className="font-quicksand text-left font-bold lg:text-2xl">
             Links
           </h1>
           <div className=" items-center gap-1.5 mt-2 justify-center">
@@ -126,7 +124,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="font-medium lg:p-1.5 p-1 font-quicksand lg:text-sm text-xs">
+                <div className="font-medium lg:p-1.5 p-1 font-quicksand text-xs">
                   {item.name}
                 </div>
               </a>
@@ -135,7 +133,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col lg:pl-0 pl-12 justify-center lg:mt-0 mt-4">
-          <h1 className="font-quicksand text-left font-bold lg:text-3xl">
+          <h1 className="font-quicksand text-left font-bold lg:text-2xl">
             Legal
           </h1>
           <div className=" items-center gap-1.5 mt-2 justify-center">
@@ -146,7 +144,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="font-medium lg:p-1.5 p-1 font-quicksand lg:text-sm text-xs">
+                <div className="font-medium lg:p-1.5 p-1 font-quicksand text-xs">
                   {item.name}
                 </div>
               </a>
@@ -154,15 +152,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center lg:mt-6 lg:-mt-4 mt-6">
-          <h1 className="font-quicksand text-left font-bold lg:text-3xl">
+        <div className="flex flex-col justify-center items-center lg:mt-6  mt-6">
+          <h1 className="font-quicksand text-left font-bold lg:text-2xl">
             Newsletter
           </h1>
-          <p className="lg:max-w-[25rem] max-w-[21rem] font-quicksand mt-3 lg:text-base text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni saepe aspernatur.</p>
+          <p className="lg:max-w-[25rem] max-w-[21rem] font-quicksand mt-3 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni saepe aspernatur.</p>
           <div className="items-center gap-1.5 mt-4 justify-center">
             <form className='flex flex-col' >
               <input
-                className='p-3 rounded-sm text-white focus:outline-none  font-quicksand lg:w-[22rem] w-[19rem]'
+                className='p-3 rounded-sm text-white text-xs focus:outline-none  font-quicksand lg:w-[22rem] w-[19rem]'
                 placeholder='Email Adress'
                 type='email'
                 required
@@ -173,7 +171,7 @@ const Footer = () => {
               />
               <button
                 type='submit'
-                className='lg:w-[22rem] w-[19rem] mt-4 bg-primary p-2 font-quicksand text-white rounded-md'
+                className='lg:w-[22rem] text-xs w-[19rem] mt-4 bg-primary p-2 font-quicksand text-white rounded-sm'
               >
                 {!loading ? (
                   "Submit"

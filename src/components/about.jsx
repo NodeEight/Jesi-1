@@ -1,54 +1,46 @@
 import React from 'react';
-import { RiLightbulbFlashLine } from "react-icons/ri";
 import { BiTargetLock } from "react-icons/bi";
 import About1 from "../assets/abt1.png";
 import About2 from "../assets/abt2.png";
 
 const About = () => {
     return (
-        <div className="relative w-full lg:h-screen lg:h-full lg:grid grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14">
+        <div className="relative w-full h-full lg:grid grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
             <div className="bg-green_bg opacity-10 absolute inset-0 z-0"></div>
-
             {/* Left section */}
             <div className="relative z-10">
-                <h1 className="text-gray-900 relative z-10 mt-6 font-bold lg:text-lg text-sm font-quicksand">ABOUT SKILLSLIFT</h1>
-                <p className='lg:mt-24 mt-8 font-bold font-quicksand lg:text-5xl text-2xl '>The Place where dreams are Achieved</p>
-                <p className='lg:mt-12 mt-2 font-quicksand lg:text-md  text-xs font-medium'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid mollitia
-                    quaerat iure minus. Ratione id porro reprehenderit, nisi, assumenda ipsum consequatur laboriosam
-                    distinctio corporis voluptatibus doloremque ducimus minima placeat repellat numquam quis!
+                <h1 className="text-gray-900 relative z-10 mt-6 font-bold  text-sm font-quicksand">ABOUT SKILLSLIFT</h1>
+                <p className='lg:mt-12 mt-3 font-bold font-quicksand lg:text-4xl text-2xl '>The Place where dreams are Achieved</p>
+                <p className='lg:mt-12 mt-2 mb-6 font-quicksand lg:text-md text-sm font-medium about'>
+                    Welcome to Jesi, the gateway to your Tech dreams. We are committed to making your aspirations
+                    in the world of technology come true. Our well crafted curriculum, developed in collaboration
+                    with industry experts, equips you with the latest and sought-after skills that perfectly match
+                    industry demands.
+                </p>
+                <p className='lg:mt-8 mt-2 mb-6 font-quicksand lg:text-md xl:text-md text-sm about font-medium'>
+                    Our goal is to build your confidence with technical and soft skills to land a rewarding
+                    job within a year of completing our program. If you're eager to kickstart your Tech journey
+                    and transform your dreams into reality, look no further. Join Jesi today and let's make your
+                    Tech Dreams a remarkable success story.
                 </p>
                 <div className='aboutUs'>
-                    <div className='main1'>
-                        <RiLightbulbFlashLine className="icon" />
-                        <div className=''>
-                            <h1 className='font-quicksand font-bold lg:text-2xl text-xl mb-2 -mt-2'>Our Mission</h1>
-                            <p className='font-quicksand lg:text-base  text-xs'>
-
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Delectus, hic. Non sit quidem, praesentium rerum illum vitae quisquam?
-                            </p>
-                        </div>
-                    </div>
                     <div className='main2 mt-6'>
                         <BiTargetLock className="icon" />
                         <div className=''>
                             <h1 className='font-quicksand font-bold lg:text-2xl text-xl  mb-2 -mt-2'>Our Vision</h1>
-                            <p className='font-quicksand lg:text-base  text-xs'>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Delectus, hic. Non sit quidem, praesentium rerum illum vitae quisquam?
+                            <p className='font-quicksand lg:text-md text-sm about'>
+                                Jesi is on a remarkable journey to become the leading provider
+                                of ethical and ambitious talents that are shaping Africa's digital
+                                economy.
                             </p>
                         </div>
                     </div>
                 </div>
-                <button className='lg:mt-[3rem] mt-5 lg:mb-0 mb-4 lg:ml-0 ml-14 rounded-md text-white font-quicksand bg-primary lg:p-3 p-2 lg:text-base text-xs'>
-                    Read More About Us
-                </button>
             </div>
 
             {/* Right */}
-            <div className=" items-center justify-center relative z-10 lg:mt-0 mt-4 ">
-                <img src={About1} className='lg:mt-12 lg:ml-[10rem] ml-10 ' />
+            <div className="items-center justify-center relative z-10 lg:mt-0 mt-4 md:pb-[4rem]">
+                <img src={About1} className='lg:mt-12 lg:ml-[7rem] ml-10 ' />
                 <img src={About2} className='lg:ml-[3rem] lg:mt-2 mt-1' />
             </div>
         </div>

@@ -1,9 +1,16 @@
-const Header = () => {
+import React from 'react';
+import Bg from '../../assets/coursebg.png';
 
+const Header = () => {
     return (
-        <div className="relative w-full py-12 pt-24 h-[40rem] " style={{ backgroundColor: "rgba(255, 197, 0, 0.1)" }}>
-            <div className="mx-auto text-center mt-48  items-center justify-center">
-                <h2 className="font-quicksand font-bold text-green text-center items-center lg:text-5xl text-2xl mt-16">Course Details</h2>
+        <div className="relative w-full py-12 pt-24 h-[30rem] bg-cover bg-center"
+            style={{
+                backgroundColor: "rgba(255, 197, 0, 0.1)",
+                backgroundImage: `url(${Bg})`,
+            }}
+        >
+            <div className="mx-auto text-center mt-24 flex flex-col items-center justify-center">
+                <h2 className="font-quicksand font-bold text-green text-center lg:text-5xl text-2xl mt-16">Course Details</h2>
             </div>
         </div>
     );

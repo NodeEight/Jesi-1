@@ -15,6 +15,16 @@
   /* align-items: center; */
   justify-content: center;
 }
+.partners{
+  line-height: 2;
+}
+.bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #000; 
+  border-radius: 50%;
+  margin-top: 8px;
+}
 
 /* Define the bounce animation */
 @keyframes bounce {
@@ -98,6 +108,10 @@
 }
 
 @media (max-width: 320px) {
+  .about {
+    font-size: 12px;
+  }
+
   .hide {
     display: none;
   }
@@ -134,6 +148,11 @@
 }
 
 @media (max-width: 480px) {
+  .about {
+    font-size: 12px;
+  }
+
+
   .hide {
     display: none;
   }
@@ -162,7 +181,7 @@
   }
   .icon {
     background-color: #ffc500;
-    width: 3rem;
+    width: 3.2rem;
     height: 1.8rem;
     padding: 8px;
     border-radius: 50%;
@@ -170,6 +189,10 @@
 }
 
 @media (max-width: 600px) {
+  .about {
+    font-size: 12px;
+  }
+
   .hide {
     display: none;
   }
