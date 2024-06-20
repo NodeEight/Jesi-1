@@ -9,7 +9,7 @@ import { PiSmileyLight } from "react-icons/pi";
 import { BsEmojiSmile } from "react-icons/bs";
 
 const Main = () => {
-
+    
     const coureDetails = [
         {
             id: 1,
@@ -99,7 +99,7 @@ const Main = () => {
                             </button>
                         ))}
                     </div>
-                    <h1 className='lg:-ml-[28rem] -ml-[14rem] font-bold lg:text-base text-sm' >Course Description</h1>
+                    <h1 className='lg:-ml-[28rem] -ml-[14rem] font-bold lg:text-base text-sm' >Course {tabs[activeTab]}</h1>
                     <div className="lg:w-[37.5rem] w-[23rem] p-2 bg-white">
                         {activeTab === 0 && <div className='text-xs '>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit beatae distinctio assumenda quaerat consectetur
