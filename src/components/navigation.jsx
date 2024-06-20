@@ -82,30 +82,34 @@ const Navigation = ({ showCourses }) => {
                     </div>
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pt-2 pb-3 text-xs justify-start">
-                            <button
+                            <Disclosure.Button
+                                as="button"
                                 onClick={() => handleNavigation('home')}
                                 className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
                             >
                                 Home
-                            </button>
-                            <button
+                            </Disclosure.Button>
+                            <Disclosure.Button
+                                as="button"
                                 onClick={() => handleNavigation('courses')}
                                 className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
                             >
                                 Courses
-                            </button>
-                            <button
+                            </Disclosure.Button>
+                            <Disclosure.Button
+                                as="button"
                                 onClick={() => handleNavigation('blogs')}
                                 className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
                             >
                                 Blogs
-                            </button>
-                            <button
+                            </Disclosure.Button>
+                            <Disclosure.Button
+                                as="button"
                                 onClick={() => handleNavigation('contact')}
                                 className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
                             >
                                 Contact
-                            </button>
+                            </Disclosure.Button>
                         </div>
                     </Disclosure.Panel>
                 </>
