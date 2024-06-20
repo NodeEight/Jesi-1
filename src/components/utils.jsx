@@ -4,6 +4,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
 import { CiClock1 } from "react-icons/ci";
 import { GoPerson } from "react-icons/go";
+import MKT1 from "../assets/mkt1.png"
+import DTS from "../assets/data.png";
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
     return (
@@ -79,3 +81,70 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
         </div>
     );
 };
+
+export const url = "https://forms.office.com/Pages/ShareFormPage.aspx?id=NnvSMTIcpUSD0CSX4NwgAPZNElDoFAJCuXttKwYEy1hURUNaRE9RQ1dDQTFCNzczVVBZVjBHOTlXSS4u&sharetoken=zNOmVVXfRAWP1uqGSxgK"
+
+
+export const courses = [
+    {
+        id: 1,
+        name: "Digital Marketer"
+    },
+    {
+        id: 2,
+        name: "Software Developer"
+    },
+    {
+        id: 3,
+        name: "Product Designer"
+    },
+]
+
+
+export const data = [
+    {
+        id: 1,
+        title: "Hands-On Training",
+        desc: "Gain practical experience through project-based learning."
+    }
+    , {
+        id: 2,
+        title: "Supportive Community",
+        desc: "Join a thriving tech community of learners and mentors."
+    },
+    {
+        id: 3,
+        title: "Internship Opportunities",
+        desc: "Access valuable internship experiences."
+    },
+    {
+        id: 4,
+        title: "Develop Soft Skills",
+        desc: "Mater essential communication, ethics, and teamwork abilities."
+    }
+
+]
+
+export const coursesPreview = [
+    {
+        id: 1,
+        imageSrc: MKT1,
+        title: "Digital Marketing",
+        description: "Learn how to effectively promote brands, products, and services through various digital channels and strategies.",
+        btn: "View detail"
+    },
+    {
+        id: 2,
+        imageSrc: DTS,
+        title: "Product Design",
+        description: "Master the art of designing user-friendly and visually appealing products that meet customer needs and market demands.",
+        btn: "View detail"
+    },
+    {
+        id: 4,
+        imageSrc: MKT1,
+        title: "Software Development",
+        description: "Gain the skills to develop robust software applications, from initial concept through to final deployment.",
+        btn: "View detail"
+    },
+];

@@ -12,16 +12,23 @@
 .rightSection {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
-.partners{
+
+.rightSection button:hover {
+  background-color: orangered;
+}
+
+.oneth:hover {
+  background-color: orangered;
+}
+.partners {
   line-height: 2;
 }
 .bullet {
   width: 8px;
   height: 8px;
-  background-color: #000; 
+  background-color: #000;
   border-radius: 50%;
   margin-top: 8px;
 }
@@ -151,7 +158,6 @@
   .about {
     font-size: 12px;
   }
-
 
   .hide {
     display: none;

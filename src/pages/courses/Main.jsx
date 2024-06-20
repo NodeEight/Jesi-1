@@ -19,8 +19,8 @@ const Main = () => {
             course: "Data Science",
             mode: "In Person",
             duration: "6 months",
-            venue:"Node Eight",
-            
+            venue: "Node Eight",
+
         },
     ]
 
@@ -110,22 +110,6 @@ const Main = () => {
                             </p>
                         </div>}
                         {activeTab === 1 && <div className='text-xs '>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit beatae distinctio assumenda quaerat consectetur
-                                modi fugit cum iure labore nemo quo excepturi, animi libero enim facere repellendus doloremque, eveniet optio odio.
-                            </p>
-                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit beatae distinctio assumenda quaerat consectetur
-                                modi fugit cum iure labore nemo quo excepturi, animi libero enim facere repellendus doloremque, eveniet optio odio.
-                            </p>
-                        </div>}
-                        {activeTab === 2 && <div className='text-xs'>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit beatae distinctio assumenda quaerat consectetur
-                                modi fugit cum iure labore nemo quo excepturi, animi libero enim facere repellendus doloremque, eveniet optio odio.
-                            </p>
-                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit beatae distinctio assumenda quaerat consectetur
-                                modi fugit cum iure labore nemo quo excepturi, animi libero enim facere repellendus doloremque, eveniet optio odio.
-                            </p>
-                        </div>}
-                        {activeTab === 3 && <div className='text-xs'>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit beatae distinctio assumenda quaerat consectetur
                                 modi fugit cum iure labore nemo quo excepturi, animi libero enim facere repellendus doloremque, eveniet optio odio.
                             </p>

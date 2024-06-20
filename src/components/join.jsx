@@ -16,7 +16,7 @@ const Join = () => {
   ]
 
   return (
-    <div className="relative pl-6 pr-6 lg:pb-32 pb-24 courseMain font-quicksand">
+    <div className="relative  pl-6 pr-6 lg:pb-32 pb-24 courseMain font-quicksand">
       <div className="opacity-10 absolute inset-0 z-0 background"></div>
       <div className="z-10 bg-white shadow-2xl -mt-[6rem] h-[13rem] flex flex-col justify-center items-center">
         <h1 className="font-bold lg:text-5xl text-3xl mt-4">Our Partners</h1>

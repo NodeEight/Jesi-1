@@ -3,7 +3,7 @@ import Navigation from './components/navigation';
 import LandingPage from './components/landing';
 import About from './components/about';
 import Courses from './components/courses';
-import CoursePage from "./pages/courses/Course"
+import CoursePage from "./pages/courses/Course";
 import WhyChooseUs from './components/choose';
 import Join from "./components/join";
 import Blog from "./components/blog";
@@ -19,10 +19,9 @@ const App = () => {
     setShowCourses(true);
   }
 
-
   return (
     <div className='w-full h-full'>
-      <Navigation />
+      <Navigation showCourses={showCourses} />
       {showComponents && (
         <>
           <LandingPage />

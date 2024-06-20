@@ -2,6 +2,8 @@ import React from 'react';
 import { IoPeopleOutline } from "react-icons/io5";
 import { CiClock2 } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
+import { Link } from 'react-router-dom';
+import { url } from "../../components/utils"
 
 export const CourseDetails = ({ imageSrc, title, course, mode, duration, venue }) => {
 
@@ -57,9 +59,11 @@ export const CourseDetails = ({ imageSrc, title, course, mode, duration, venue }
 
                 {/* Right Column */}
                 <div className="lg:col-span-1 lg:pl-32 -pl[18rem] lg:mt-0 mt-2 text-center justify-end">
-                    <button className="bg-primary text-white rounded-sm text-xs py-2 px-12 mt-4">
-                        Enroll for Free
-                    </button>
+                    <Link to={url}>
+                        <button className="bg-primary oneth text-white rounded-sm text-xs py-2 px-12 mt-4">
+                            Enroll for Free
+                        </button>
+                    </Link>
                 </div>
             </div>
 

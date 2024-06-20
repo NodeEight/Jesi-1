@@ -3,47 +3,11 @@ import LandingImage from "../assets/landing.png"
 import Typed from 'typed.js';
 import { useRef, useEffect } from 'react';
 import { FaCircleCheck } from "react-icons/fa6";
+import { url, courses , data} from "./utils"
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
     const typedRef = useRef(null);
-
-    const courses = [
-        {
-            id: 1,
-            name: "Digital Marketer"
-        },
-        {
-            id: 2,
-            name: "Software Developer"
-        },
-        {
-            id: 3,
-            name: "Product Designer"
-        },
-    ]
-    const data = [
-        {
-            id: 1,
-            title: "Hands-On Training",
-            desc: "Gain practical experience through project-based learning."
-        }
-        , {
-            id: 2,
-            title: "Supportive Community",
-            desc: "Join a thriving tech community of learners and mentors."
-        },
-        {
-            id: 3,
-            title: "Internship Opportunities",
-            desc: "Access valuable internship experiences."
-        },
-        {
-            id: 4,
-            title: "Develop Soft Skills",
-            desc: "Mater essential communication, ethics, and teamwork abilities."
-        }
-
-    ]
 
     useEffect(() => {
         const options = {
@@ -62,7 +26,6 @@ const LandingPage = () => {
 
     return (
         <div id='home' className="relative pb-2 font-quicksand xl:h-screen lg:h-screen h-full grid lg:grid-cols-2 items-center justify-center lg:pl-12 lg:pr-12 pl-8 pr-8">
-
             <div className="rightSection xl:-mt[4.5rem] lg:mt-[4rem] ">
                 <h1 className='lg:text-4xl xl:ml-0 mb-8 text-xl font-bold xl:mb-12 lg:mt-16 mt-32 '>
                     Become a <span ref={typedRef} className='text-primary'></span> <br />in 6 to 12 months
@@ -78,7 +41,7 @@ const LandingPage = () => {
                                 <div className='flex gap-2items-center'>
                                     <p className='about '>
                                         <span className='font-bold'>
-                                            {item.title} : 
+                                            {item.title} :
                                         </span>
 
                                         <span className='lg:ml-2 ml-1'>
@@ -90,9 +53,11 @@ const LandingPage = () => {
                         )
                     })}
                 </div>
-                <button className='lg:mt-8 mt-4 text-xs  bg-primary w-32 text-center lg:p-3 p-2 rounded-sm text-white font-quicksand'>
-                    Enroll Now
-                </button>
+                <Link to={url}>
+                    <button className='lg:mt-8 mt-4 text-xs bg-primary w-32 text-center lg:p-3 p-2 rounded-sm text-white font-quicksand'>
+                        Enroll Now
+                    </button>
+                </Link>
             </div>
             <div className="flex items-center justify-center bounce lg:mt-32 mt-8">
                 <img
