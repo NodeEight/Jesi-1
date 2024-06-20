@@ -5,7 +5,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import { url } from "../../components/utils"
 
-export const CourseDetails = ({ imageSrc, title, course, mode, duration, venue }) => {
+export const CourseDetails = ({ imageSrc, title,  mode, duration, venue }) => {
 
     return (
         <div className=" bg-white overflow-hidden font-quicksand lg:mt-0 mt-8">
@@ -14,13 +14,6 @@ export const CourseDetails = ({ imageSrc, title, course, mode, duration, venue }
             <div className="grid shadow-lg pb-12 lg:grid-cols-2 items-center justify-between">
                 {/* Left Column */}
                 <div className="lg:col-span-1">
-                    <div className="px-4 mt-6">
-                        <button
-                            className="w-[10rem] cursor-pointer text-xs bg-primary text-white font-quicksand text-center rounded-sm p-2 text-md"
-                        >
-                            {course}
-                        </button>
-                    </div>
                     <h1 className="font-bold px-4 mt-4 text-xl mb-2">{title}</h1>
                     <div className='flex items-center gap-16 px-4 text-xs mt-4'>
                         <p className='flex items-center gap-2 '>
@@ -60,7 +53,7 @@ export const CourseDetails = ({ imageSrc, title, course, mode, duration, venue }
                 {/* Right Column */}
                 <div className="lg:col-span-1 lg:pl-32 -pl[18rem] lg:mt-0 mt-2 text-center justify-end">
                     <Link to={url}>
-                        <button className="bg-primary oneth text-white rounded-sm text-xs py-2 px-12 mt-4">
+                        <button className="bg-primary xl:whitespace-nowrap oneth text-white rounded-sm text-xs py-2 px-12 mt-4">
                             Enroll for Free
                         </button>
                     </Link>

@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from './Header'
-import Main from './Main'
-const Course = () => {
+import CoursePage from './Main'
+
+const Course = ({ selectedCourse }) => {
   return (
     <div>
       <Header />
-      <Main />
+      <CoursePage selectedCourse={selectedCourse} />
     </div>
   )
 }

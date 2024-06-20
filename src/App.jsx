@@ -13,11 +13,14 @@ import ScrollToTopButton from './components/scroll';
 const App = () => {
   const [showComponents, setShowComponents] = useState(true);
   const [showCourses, setShowCourses] = useState(false);
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
-  const handleCourseClick = () => {
+  const handleCourseClick = (course) => {
+    setSelectedCourse(course);
     setShowComponents(false);
     setShowCourses(true);
   }
+
 
   return (
     <div className='w-full h-full'>
@@ -32,7 +35,7 @@ const App = () => {
           <Blog />
         </>
       )}
-      {showCourses && <CoursePage />}
+       { showCourses && <CoursePage selectedCourse={selectedCourse} />}
       <ScrollToTopButton />
       <Footer />
     </div>

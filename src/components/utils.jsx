@@ -6,12 +6,15 @@ import { CiClock1 } from "react-icons/ci";
 import { GoPerson } from "react-icons/go";
 import MKT1 from "../assets/mkt1.png"
 import DTS from "../assets/data.png";
+import { BsLaptop, BsEmojiSmile } from "react-icons/bs";
+import { SlNotebook } from "react-icons/sl";
+import { PiSmileyLight } from "react-icons/pi";
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
     return (
         <div className="max-w-sm rounded-md overflow-hidden shadow-xl mt-4">
-            <img className="w-full" src={imageSrc} alt={title} />
-            <div className="px-6 py-4 ">
+            <img className="w-full" src={imageSrc} alt={title} />                                
+            <div className="px-6 py-4 ">                                                                                                                                                                                                                
                 <div className="font-bold text-xl whitespace-nowrap lg:mb-4 mb-2 font-quicksand">{title}</div>
                 <p className="text-gray-700  text-xs font-quicksand text-md ">{description}</p>
             </div>
@@ -21,7 +24,7 @@ export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) =
                 <BsArrowRight className='text-primary' />
             </div>
         </div>
-    );
+    );                        
 };
 
 
@@ -125,26 +128,84 @@ export const data = [
 
 ]
 
+
 export const coursesPreview = [
     {
         id: 1,
         imageSrc: MKT1,
         title: "Digital Marketing",
         description: "Learn how to effectively promote brands, products, and services through various digital channels and strategies.",
-        btn: "View detail"
+        btn: "View detail",
+        overview: "A brief overview of Digital Marketing course...",
+        curriculum: "The curriculum of Digital Marketing course includes...",
+        learn: [
+            "Digital marketing basics",
+            "SEO and SEM strategies",
+            "Content marketing",
+            "Social media marketing",
+            "Email marketing",
+            "Analytics and reporting"
+        ],
+        requirements: [
+            { icon: <BsLaptop />, text: "Laptop / Mobile Phone" },
+            { icon: <SlNotebook />, text: "Notebook & Pen" },
+            { icon: <PiSmileyLight />, text: "Be motivated" },
+            { icon: <BsEmojiSmile />, text: "Be Determined" }
+        ],
+        mode: "In Person",
+        duration: "6 months",
+        venue: "Node Eight"
     },
     {
         id: 2,
         imageSrc: DTS,
         title: "Product Design",
         description: "Master the art of designing user-friendly and visually appealing products that meet customer needs and market demands.",
-        btn: "View detail"
+        btn: "View detail",
+        overview: "A brief overview of Product Design course...",
+        curriculum: "The curriculum of Product Design course includes...",
+        learn: [
+            "Design thinking principles",
+            "User research and personas",
+            "Wireframing and prototyping",
+            "UI/UX design",
+            "Visual design",
+            "Design tools and software"
+        ],
+        requirements: [
+            { icon: <BsLaptop />, text: "Laptop / Mobile Phone" },
+            { icon: <SlNotebook />, text: "Notebook & Pen" },
+            { icon: <PiSmileyLight />, text: "Be motivated" },
+            { icon: <BsEmojiSmile />, text: "Be Determined" }
+        ],
+        mode: "In Person",
+        duration: "6 months",
+        venue: "Node Eight"
     },
     {
         id: 4,
         imageSrc: MKT1,
         title: "Software Development",
         description: "Gain the skills to develop robust software applications, from initial concept through to final deployment.",
-        btn: "View detail"
-    },
+        btn: "View detail",
+        overview: "A brief overview of Software Development course...",
+        curriculum: "The curriculum of Software Development course includes...",
+        learn: [
+            "Programming fundamentals",
+            "Software development lifecycle",
+            "Frontend and backend development",
+            "Database management",
+            "Version control systems",
+            "Deployment and maintenance"
+        ],
+        requirements: [
+            { icon: <BsLaptop />, text: "Laptop / Mobile Phone" },
+            { icon: <SlNotebook />, text: "Notebook & Pen" },
+            { icon: <PiSmileyLight />, text: "Be motivated" },
+            { icon: <BsEmojiSmile />, text: "Be Determined" }
+        ],
+        mode: "In Person",
+        duration: "6 months",
+        venue: "Node Eight"
+    }
 ];
