@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../assets/main.png";
@@ -13,13 +14,19 @@ const scrollTo = (id) => {
 };
 
 const Navigation = ({ showCourses }) => {
+    const [activeTab, setActiveTab] = useState('home');
 
     const handleNavigation = (id) => {
+        setActiveTab(id);
         if (showCourses) {
             window.location.href = "/";
         } else {
             scrollTo(id);
         }
+    };
+
+    const getButtonClass = (id) => {
+        return activeTab === id ? 'text-primary font-bold' : 'text-gray-900';
     };
 
     return (
@@ -49,28 +56,28 @@ const Navigation = ({ showCourses }) => {
                             <div className="absolute inset-y-0 text-sm right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 text-gray-900">
                                 <div className="flex items-center gap-12">
                                     <div className="hide sm:ml-6 sm:block">
-                                        <div className="flex space-x-8">
+                                        <div className="flex space-x-8 2xl:text-lg">
                                             <button
                                                 onClick={() => handleNavigation('home')}
-                                                className="font-quicksand"
+                                                className={`font-quicksand nav ${getButtonClass('home')}`}
                                             >
                                                 Home
                                             </button>
                                             <button
                                                 onClick={() => handleNavigation('courses')}
-                                                className="font-quicksand"
+                                                className={`font-quicksand nav ${getButtonClass('courses')}`}
                                             >
                                                 Courses
                                             </button>
                                             <button
                                                 onClick={() => handleNavigation('blogs')}
-                                                className="font-quicksand"
+                                                className={`font-quicksand nav ${getButtonClass('blogs')}`}
                                             >
                                                 Blogs
                                             </button>
                                             <button
                                                 onClick={() => handleNavigation('contact')}
-                                                className="font-quicksand"
+                                                className={`font-quicksand nav ${getButtonClass('contact')}`}
                                             >
                                                 Contact
                                             </button>
@@ -85,28 +92,28 @@ const Navigation = ({ showCourses }) => {
                             <Disclosure.Button
                                 as="button"
                                 onClick={() => handleNavigation('home')}
-                                className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
+                                className={`block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md ${getButtonClass('home')}`}
                             >
                                 Home
                             </Disclosure.Button>
                             <Disclosure.Button
                                 as="button"
                                 onClick={() => handleNavigation('courses')}
-                                className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
+                                className={`block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md ${getButtonClass('courses')}`}
                             >
                                 Courses
                             </Disclosure.Button>
                             <Disclosure.Button
                                 as="button"
                                 onClick={() => handleNavigation('blogs')}
-                                className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
+                                className={`block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md ${getButtonClass('blogs')}`}
                             >
                                 Blogs
                             </Disclosure.Button>
                             <Disclosure.Button
                                 as="button"
                                 onClick={() => handleNavigation('contact')}
-                                className="block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md text-gray-700"
+                                className={`block text-center font-quicksand pl-6 pr-6 bg-transparent py-2 rounded-md ${getButtonClass('contact')}`}
                             >
                                 Contact
                             </Disclosure.Button>

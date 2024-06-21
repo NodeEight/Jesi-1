@@ -9,12 +9,20 @@ import DTS from "../assets/data.png";
 import { BsLaptop, BsEmojiSmile } from "react-icons/bs";
 import { SlNotebook } from "react-icons/sl";
 import { PiSmileyLight } from "react-icons/pi";
+import PARTNER1 from "../assets/part1.png";
+import PARTNER2 from "../assets/part2.png";
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedinIn,
+    FaXTwitter,
+} from "react-icons/fa6";
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
     return (
         <div className="max-w-sm rounded-md overflow-hidden shadow-xl mt-4">
-            <img className="w-full" src={imageSrc} alt={title} />                                
-            <div className="px-6 py-4 ">                                                                                                                                                                                                                
+            <img className="w-full" src={imageSrc} alt={title} />
+            <div className="px-6 py-4 ">
                 <div className="font-bold text-xl whitespace-nowrap lg:mb-4 mb-2 font-quicksand">{title}</div>
                 <p className="text-gray-700  text-xs font-quicksand text-md ">{description}</p>
             </div>
@@ -24,7 +32,7 @@ export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) =
                 <BsArrowRight className='text-primary' />
             </div>
         </div>
-    );                        
+    );
 };
 
 
@@ -209,3 +217,121 @@ export const coursesPreview = [
         venue: "Node Eight"
     }
 ];
+
+
+export const blogPreview = [
+    {
+        id: 1,
+        imageSrc: MKT1,
+        title: "Event's Name",
+        description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi itaque blanditiis voluptas accusamus quia qui laborum facilis, deserunt ipsa nulla soluta maxime dolore inventore.",
+        date: "Date",
+        author: "Admin",
+        btn: "Read more",
+
+    },
+]
+
+export const choose = [
+    {
+        id: 1,
+        title: "Scholarships",
+        desc: "Jesi offers fully funded scholarships to ensure that cost is never a barrier to learning. We believe that education should be accessible to everyone."
+    }
+    , {
+        id: 2,
+        title: "Hands-On Practical Experience",
+        desc: "Valuable hands-on experience through projects and exercises, preparing you to face real-world tech challenges with confidence.    "
+    },
+    {
+        id: 3,
+        title: "Job Connections",
+        desc: "Our commitment doesn't end with skills development. We help you connect with digital companies, increasing your chances of landing rewarding tech jobs."
+    },
+    {
+        id: 4,
+        title: "Community for Lifelong Learning Partner",
+        desc: "Jesi is your lifelong companion in your journey as a tech bro/sis. We provide continuous support and opportunities for continuous growth."
+    }
+
+]
+
+export const choosedetails = [
+    { id: 1, name: "Get 100% Scholarship", color: "#FFC500" },
+    { id: 2, name: "Employability", color: "#003366", size: "16px" },
+    { id: 3, name: "Learn Anything", color: "#008080" }
+
+];
+
+export const legal = [
+    {
+        id: 1,
+        name: "Terms of Use",
+    },
+    {
+        id: 2,
+        name: "Privacy Policy",
+    },
+    {
+        id: 3,
+        name: "Courses"
+    },
+    {
+        id: 4,
+        name: "Scholarships"
+    },
+    {
+        id: 5,
+        name: "Career Path"
+    },
+    {
+        id: 6,
+        name: "Blogs & Articles"
+    }
+]
+
+export const links = [
+    {
+        id: 1,
+        name: "Home",
+    },
+    {
+        id: 2,
+        name: "About Us",
+    },
+    {
+        id: 3,
+        name: "Courses"
+    },
+    {
+        id: 4,
+        name: "Scholarships"
+    },
+    {
+        id: 5,
+        name: "Career Path"
+    },
+    {
+        id: 6,
+        name: "Blogs & Articles"
+    }
+]
+
+export const socialmedia = [
+    { icon: FaFacebookF, link: "https://www.facebook.com" },
+    { icon: FaInstagram, link: "https://www.instagram.com" },
+    { icon: FaLinkedinIn, link: "https://www.linkedin.com" },
+    { icon: FaXTwitter, link: "https://www.twitter.com" },
+];
+
+export const partners = [
+    {
+        id: 1,
+        name: "botnar",
+        avatar: PARTNER1
+    }, {
+        id: 2,
+        name: "node8",
+        avatar: PARTNER2
+    }
+]
