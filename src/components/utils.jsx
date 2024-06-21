@@ -93,7 +93,7 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
     );
 };
 
-export const url = "https://forms.office.com/Pages/ShareFormPage.aspx?id=NnvSMTIcpUSD0CSX4NwgAPZNElDoFAJCuXttKwYEy1hURUNaRE9RQ1dDQTFCNzczVVBZVjBHOTlXSS4u&sharetoken=zNOmVVXfRAWP1uqGSxgK"
+export const url = "https://forms.office.com/Pages/ResponsePage.aspx?id=NnvSMTIcpUSD0CSX4NwgAPZNElDoFAJCuXttKwYEy1hURUNaRE9RQ1dDQTFCNzczVVBZVjBHOTlXSS4u"
 
 
 export const courses = [
