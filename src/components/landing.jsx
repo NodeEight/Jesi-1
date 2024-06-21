@@ -3,7 +3,7 @@ import LandingImage from "../assets/landing.png"
 import Typed from 'typed.js';
 import { useRef, useEffect } from 'react';
 import { FaCircleCheck } from "react-icons/fa6";
-import { url, courses , data} from "./utils"
+import { url, courses, data } from "./utils"
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
