@@ -1,72 +1,6 @@
-import { Input } from '@mantine/core';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaXTwitter,
-} from "react-icons/fa6";
 import Logo from "../assets/main.png";
 import React, { useState } from 'react';
-
-const socialmedia = [
-  { icon: FaFacebookF, link: "https://www.facebook.com" },
-  { icon: FaInstagram, link: "https://www.instagram.com" },
-  { icon: FaLinkedinIn, link: "https://www.linkedin.com" },
-  { icon: FaXTwitter, link: "https://www.twitter.com" },
-];
-const links = [
-  {
-    id: 1,
-    name: "Home",
-  },
-  {
-    id: 2,
-    name: "About Us",
-  },
-  {
-    id: 3,
-    name: "Courses"
-  },
-  {
-    id: 4,
-    name: "Scholarships"
-  },
-  {
-    id: 5,
-    name: "Career Path"
-  },
-  {
-    id: 6,
-    name: "Blogs & Articles"
-  }
-]
-
-const legal = [
-  {
-    id: 1,
-    name: "Terms of Use",
-  },
-  {
-    id: 2,
-    name: "Privacy Policy",
-  },
-  {
-    id: 3,
-    name: "Courses"
-  },
-  {
-    id: 4,
-    name: "Scholarships"
-  },
-  {
-    id: 5,
-    name: "Career Path"
-  },
-  {
-    id: 6,
-    name: "Blogs & Articles"
-  }
-]
+import { legal, links, socialmedia } from "./utils"
 
 const Footer = () => {
   const [loading, setLoading] = React.useState(false);
@@ -79,8 +13,6 @@ const Footer = () => {
     console.log("Input changing to:", event.target.value);
     setNewsLetterInfo({ email: event.target.value });
   };
-
-
 
   return (
     <section id="contact" className="relative w-full h-full pb-10" style={{ backgroundColor: "rgba(0, 128, 128, 0.1)" }}>

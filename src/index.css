@@ -19,6 +19,9 @@
   background-color: orangered;
 }
 
+.nav:hover {
+  color: orangered;
+}
 .oneth:hover {
   background-color: orangered;
 }

@@ -1,19 +1,6 @@
 import React from "react";
-import PARTNER1 from "../assets/part1.png";
-import PARTNER2 from "../assets/part2.png";
-
+import {partners} from "./utils"
 const Join = () => {
-  const partners = [
-    {
-      id: 1,
-      name: "botnar",
-      avatar: PARTNER1
-    }, {
-      id: 2,
-      name: "node8",
-      avatar: PARTNER2
-    }
-  ]
 
   return (
     <div className="relative  pl-6 pr-6 lg:pb-32 pb-24 courseMain font-quicksand">

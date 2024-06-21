@@ -15,11 +15,11 @@ const CoursePage = ({ selectedCourse }) => {
             <div className="flex flex-col items-center justify-center w-full">
                 <CourseDetails {...selectedCourse} />
                 <div className="flex flex-col items-center p-4 w-full font-quicksand">
-                    <div className="gap-0.5 mb-4 lg:-ml-[20rem] -ml-[12rem]">
+                    <div className="gap-0.5 mb-4 lg:-ml-[20rem] -ml-[8.5rem]">
                         {tabs.map((tab, index) => (
                             <button
                                 key={index}
-                                className={`px-4 py-2 lg:w-[9rem] w-[5.5rem] text-xs font-medium focus:outline-none transition-colors duration-300 ${activeTab === index
+                                className={`px-4 py-2 lg:w-[9rem] w-[7rem] text-xs font-medium focus:outline-none transition-colors duration-300 ${activeTab === index
                                     ? 'bg-primary text-white'
                                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                                     }`}

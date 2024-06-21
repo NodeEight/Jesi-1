@@ -26,8 +26,8 @@ const LandingPage = () => {
 
     return (
         <div id='home' className="relative pb-2 font-quicksand xl:h-screen lg:h-screen h-full grid lg:grid-cols-2 items-center justify-center lg:pl-12 lg:pr-12 pl-8 pr-8">
-            <div className="rightSection xl:-mt[4.5rem] lg:mt-[4rem] ">
-                <h1 className='lg:text-4xl xl:ml-0 mb-8 text-xl font-bold xl:mb-12 lg:mt-16 mt-32 '>
+            <div className="rightSection 2xl:-mt-[3rem] lg:mt-[4rem] ">
+                <h1 className='lg:text-4xl 2xl:text-5xl xl:ml-0 mb-8 text-xl font-bold xl:mb-12 lg:mt-16 mt-32 '>
                     Become a <span ref={typedRef} className='text-primary'></span> <br />in 6 to 12 months
                 </h1>
                 <p className=' xl:text-lg text-sm lg:text-xs  md:mt-12 -mt-4 lg:mt-0 lg:pr-0 pr-2 about'>
@@ -62,7 +62,7 @@ const LandingPage = () => {
             <div className="flex items-center justify-center bounce lg:mt-32 mt-8">
                 <img
                     src={LandingImage}
-                    className='rounded-full md:h-[30rem] md:w-[30rem]'
+                    className='rounded-full md:h-[30rem] md:w-[30rem] 2xl:h-[40rem] 2xl:w-[40rem]'
                 />
             </div>
         </div>
