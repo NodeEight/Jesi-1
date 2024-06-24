@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
       </div>
 
       <div className='grid lg:grid-cols-2 mt-12'>
-        <div>
+        <div className=''>
           {choosedetails.map((item, index) => (
             <div key={index} className="m-12">
               <p style={{ backgroundColor: item.color, marginLeft: item.size }} className="text-white -pl-6 flex text-xs items-center  p-2 font-quicksand lg:text-base md:text-sm whitespace-nowrap w-[9rem] rounded-sm">
@@ -48,6 +48,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
         <img
+          className='xl:-ml-16 lg:-ml-16'
           src={Choose}
         />
       </div>

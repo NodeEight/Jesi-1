@@ -19,12 +19,17 @@
   background-color: orangered;
 }
 
-.hovered button:hover{
+.hovered button:hover {
   background-color: orangered;
-
 }
 
+.icons:hover{
+  background-color: orangered;
+}
 
+.download:hover {
+  background-color: orangered;
+}
 .nav:hover {
   color: orangered;
 }

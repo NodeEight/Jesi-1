@@ -16,7 +16,11 @@ import {
     FaInstagram,
     FaLinkedinIn,
     FaXTwitter,
+    FaTiktok
 } from "react-icons/fa6";
+import DigiPDF from "../assets/digital_marketing.pdf";
+import Software from "../assets/software_development.pdf";
+import ProductDesign from "../assets/product_design.pdf";
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
     return (
@@ -171,7 +175,8 @@ export const coursesPreview = [
         ],
         mode: "In Person",
         duration: "6 months",
-        venue: "Node Eight"
+        venue: "Node Eight",
+        curriculumPdf: DigiPDF
     },
     {
         id: 2,
@@ -204,7 +209,8 @@ export const coursesPreview = [
         ],
         mode: "In Person",
         duration: "6 months",
-        venue: "Node Eight"
+        venue: "Node Eight",
+        curriculumPdf: ProductDesign
     },
     {
         id: 4,
@@ -212,7 +218,7 @@ export const coursesPreview = [
         title: "Software Development",
         description: "Gain the skills to develop robust software applications, from initial concept through to final deployment.",
         btn: "View detail",
-        overview: " On the course, you will learn front-end technologies (HTML, CSS, JavaScript), back-end technologies (Python), database management, server deployment, frameworks, API integration, software architecture, security, testing, and debugging, making you proficient in creating versatile and efficient web applications.",
+        overview: " In the course, you will learn front-end technologies (HTML, CSS, JavaScript), back-end technologies (Python), database management, server deployment, frameworks, API integration, software architecture, security, testing, and debugging, making you proficient in creating versatile and efficient web applications.",
         curriculum: [
             "Programming Fundamentals",
             "Data Structures and Algorithms",
@@ -237,7 +243,8 @@ export const coursesPreview = [
         ],
         mode: "In Person",
         duration: "6 months",
-        venue: "Node Eight"
+        venue: "Node Eight",
+        curriculumPdf: Software
     }
 ];
 
@@ -347,10 +354,12 @@ export const links = [
 ]
 
 export const socialmedia = [
-    { icon: FaFacebookF, link: "https://www.facebook.com" },
-    { icon: FaInstagram, link: "https://www.instagram.com" },
-    { icon: FaLinkedinIn, link: "https://www.linkedin.com" },
-    { icon: FaXTwitter, link: "https://www.twitter.com" },
+    { icon: FaFacebookF, link: "https://www.facebook.com/share/tCS4tBTUEbow9LgZ/?mibextid=LQQJ4d" },
+    { icon: FaInstagram, link: "https://www.instagram.com/use_jesi?igsh=MWNoaTVla203ejgxdg==" },
+    { icon: FaLinkedinIn, link: "https://www.linkedin.com/company/usejesiii" },
+    { icon: FaXTwitter, link: "https://x.com/use_jesi?s=21" },
+    { icon: FaTiktok, link: "https://www.tiktok.com/@usejesii" },
+
 ];
 
 export const partners = [

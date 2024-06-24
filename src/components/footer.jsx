@@ -41,8 +41,10 @@ const Footer = () => {
               <a
                 key={index}
                 href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <div className="bg-primary text-white lg:p-1.5 p-1 rounded-sm">
+                <div className="bg-primary text-white lg:p-1.5 p-1 rounded-sm icons">
                   <item.icon />
                 </div>
               </a>

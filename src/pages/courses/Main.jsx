@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IoMdCheckboxOutline } from "react-icons/io";
 import { CourseDetails } from './utils';
 
+
 const CoursePage = ({ selectedCourse }) => {
     const [activeTab, setActiveTab] = useState(0);
     const tabs = ['Overview', 'Curriculum'];
@@ -42,6 +43,11 @@ const CoursePage = ({ selectedCourse }) => {
                                     <li key={index} className="mb-2">{item}</li>
                                 ))}
                             </ul>
+                            <a href={selectedCourse.curriculumPdf} target="_blank" rel="noopener noreferrer">
+                                <button className="mt-4 bg-primary text-white px-4 py-2 rounded-sm">
+                                    View Curriculum PDF
+                                </button>
+                            </a>
                         </div>}
                     </div>
                     <div
