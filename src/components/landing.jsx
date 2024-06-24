@@ -1,5 +1,5 @@
 import React from 'react';
-import LandingImage from "../assets/landing.png"
+import LandingImage from "../assets/hero.jpg"
 import Typed from 'typed.js';
 import { useRef, useEffect } from 'react';
 import { FaCircleCheck } from "react-icons/fa6";
@@ -59,10 +59,10 @@ const LandingPage = () => {
                     </button>
                 </Link>
             </div>
-            <div className="flex items-center justify-center bounce lg:mt-32 mt-8">
+            <div className="flex items-center justify-center bounce lg:mt-32 mt-8 ">
                 <img
                     src={LandingImage}
-                    className='rounded-full md:h-[30rem] md:w-[30rem] 2xl:h-[40rem] 2xl:w-[40rem]'
+                    className='rounded-full md:h-[25rem] md:w-[25rem] 2xl:h-[35rem] 2xl:w-[35rem] object-cover '
                 />
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Choose from "../assets/choose.png"
+import Choose from "../assets/choose.jpg"
 import { GoDotFill } from "react-icons/go";
 import { FaCircleCheck } from "react-icons/fa6";
 import { choose, choosedetails } from './utils';
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
         <img
-          className='xl:-ml-16 lg:-ml-16'
+          className='xl:-ml-16 lg:-ml-16 object-center'
           src={Choose}
         />
       </div>

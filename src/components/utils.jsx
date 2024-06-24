@@ -5,7 +5,6 @@ import { CiCalendarDate } from "react-icons/ci";
 import { CiClock1 } from "react-icons/ci";
 import { GoPerson } from "react-icons/go";
 import MKT1 from "../assets/mkt1.png"
-import DTS from "../assets/data.png";
 import { BsLaptop, BsEmojiSmile } from "react-icons/bs";
 import { SlNotebook } from "react-icons/sl";
 import { PiSmileyLight } from "react-icons/pi";
@@ -21,6 +20,9 @@ import {
 import DigiPDF from "../assets/digital_marketing.pdf";
 import Software from "../assets/software_development.pdf";
 import ProductDesign from "../assets/product_design.pdf";
+import DigitalCourse from "../assets/digicourse.jpg";
+import ProductCourse from "../assets/productcourse.jpg";
+import SoftCourse from "../assets/softcourse.jpg";
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
     return (
@@ -146,7 +148,7 @@ export const data = [
 export const coursesPreview = [
     {
         id: 1,
-        imageSrc: MKT1,
+        imageSrc: DigitalCourse,
         title: "Digital Marketing",
         description: "Learn how to effectively promote brands, products, and services through various digital channels and strategies.",
         btn: "View detail",
@@ -180,7 +182,7 @@ export const coursesPreview = [
     },
     {
         id: 2,
-        imageSrc: DTS,
+        imageSrc: ProductCourse,
         title: "Product Design",
         description: "Master the art of designing user-friendly and visually appealing products that meet customer needs and market demands.",
         btn: "View detail",
@@ -214,7 +216,7 @@ export const coursesPreview = [
     },
     {
         id: 4,
-        imageSrc: MKT1,
+        imageSrc: SoftCourse,
         title: "Software Development",
         description: "Gain the skills to develop robust software applications, from initial concept through to final deployment.",
         btn: "View detail",
