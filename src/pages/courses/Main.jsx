@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IoMdCheckboxOutline } from "react-icons/io";
 import { CourseDetails } from './utils';
 
+
 const CoursePage = ({ selectedCourse }) => {
     const [activeTab, setActiveTab] = useState(0);
     const tabs = ['Overview', 'Curriculum'];
@@ -29,7 +30,7 @@ const CoursePage = ({ selectedCourse }) => {
                             </button>
                         ))}
                     </div>
-                    <h1 className='lg:-ml-[28rem] -ml-[14rem] font-bold lg:text-base text-sm'>
+                    <h1 className='lg:-ml-[28rem] -ml-[15rem] font-bold lg:text-base text-sm'>
                         Course {tabs[activeTab]}
                     </h1>
                     <div className="lg:w-[37.5rem] w-[23rem] p-2 bg-white">
@@ -37,7 +38,16 @@ const CoursePage = ({ selectedCourse }) => {
                             <p>{selectedCourse.overview}</p>
                         </div>}
                         {activeTab === 1 && <div className='text-xs '>
-                            <p>{selectedCourse.curriculum}</p>
+                            <ul className="list-disc pl-5">
+                                {selectedCourse.curriculum.map((item, index) => (
+                                    <li key={index} className="mb-2">{item}</li>
+                                ))}
+                            </ul>
+                            <a href={selectedCourse.curriculumPdf} target="_blank" rel="noopener noreferrer">
+                                <button className="mt-4 bg-primary text-white px-4 py-2 rounded-sm">
+                                    View Curriculum PDF
+                                </button>
+                            </a>
                         </div>}
                     </div>
                     <div

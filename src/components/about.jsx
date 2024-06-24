@@ -5,7 +5,7 @@ import About2 from "../assets/abt2.png";
 
 const About = () => {
     return (
-        <div className="relative w-full xl:h-screen lg:h-screen h-full lg:grid grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
+        <div id='about' className="relative w-full xl:h-screen  lg:h-screen h-full lg:grid grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
             <div className="bg-green_bg opacity-10 absolute inset-0 z-0"></div>
             {/* Left section */}
             <div className="relative z-10">
@@ -39,7 +39,7 @@ const About = () => {
             </div>
 
             {/* Right */}
-            <div className="items-center justify-center relative z-10 lg:mt-0 mt-4 md:pb-[4rem]">
+            <div className="items-center justify-center relative z-10 lg:-mt-12 mt-4 md:pb-[4rem]">
                 <img src={About1} className='lg:mt-12 lg:ml-[7rem] ml-10 ' />
                 <img src={About2} className='lg:ml-[3rem] lg:mt-2 mt-1' />
             </div>

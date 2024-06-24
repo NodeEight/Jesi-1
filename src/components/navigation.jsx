@@ -56,7 +56,7 @@ const Navigation = ({ showCourses }) => {
                             <div className="absolute inset-y-0 text-sm right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 text-gray-900">
                                 <div className="flex items-center gap-12">
                                     <div className="hide sm:ml-6 sm:block">
-                                        <div className="flex space-x-8 2xl:text-lg">
+                                        <div className="flex space-x-8 2xl:text-md ">
                                             <button
                                                 onClick={() => handleNavigation('home')}
                                                 className={`font-quicksand nav ${getButtonClass('home')}`}
