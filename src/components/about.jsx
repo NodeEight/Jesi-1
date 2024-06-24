@@ -39,13 +39,34 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Right */}
-            <div className="items-center justify-center object-center relative z-10 lg:-mt-12 mt-4 md:pb-[4rem]">
-                <img src={About1} className='lg:mt-12 lg:ml-[7rem] ml-10 object-cover h-[16rem] ' />
-                <img src={About2} className='lg:ml-[3rem] lg:mt-2 mt-1 object-cover h-[20rem]'  />
+            {/*  mt-4 md:pb-[4rem] */}
+            <div className="items-center grid lg:grid-cols-2 object-center relative z-10 lg:-mt-48">
+                {imgs.map((item, index) => (
+                    <div key={index} className="p-3 flex items-center justify-center ">
+                        <img
+                            alt='Image'
+                            src={item.ImgSRC}
+                            className=" object-fill rounded-lg max-w-[80%] max-h-[80%]"
+                        />
+                    </div>
+                ))}
+
             </div>
         </div>
     );
 };
 
 export default About;
+
+
+export const imgs = [
+    {
+        id: 1,
+        ImgSRC: About2,
+    },
+    {
+        id: 2,
+        ImgSRC: About2,
+    },
+
+]

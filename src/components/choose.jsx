@@ -6,7 +6,7 @@ import { choose, choosedetails } from './utils';
 
 const WhyChooseUs = () => {
   return (
-    <section className='relative xl:h-screen lg:h-screen h-full w-full font-quicksand  gap-2 bg-white grid lg:grid-cols-2 lg:pb-48 pb-48 pl-6 pr-6 pt-14'>
+    <section className='relative xl:h-screen lg:h-screen xl:pr-32 xl:pl-32 xl:mt-12 h-full w-full font-quicksand gap-2 bg-white grid lg:grid-cols-2 grid-cols-1 lg:pb-48 pb-48 pl-6 pr-6 pt-14'>
       <div >
         <h1 className="max-w-[10rem] -mt-6 font-bold lg:text-lg text-sm">Why Jesi</h1>
         <p className='lg:mt-14 mt-8 font-bold lg:text-4xl text-2xl'>Grow Your Skills, Define Your Bright Future</p>
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
         </div>
       </div>
 
-      <div className='grid lg:grid-cols-2 mt-12'>
+      <div className='lg:flex lg:justify-between mt-10 '>
         <div className=''>
           {choosedetails.map((item, index) => (
             <div key={index} className="m-12">
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
         <img
-          className='xl:-ml-16 lg:-ml-16 object-center'
+          className='rounded-lg max-w-[80%] max-h-[80%] object-contain'
           src={Choose}
         />
       </div>

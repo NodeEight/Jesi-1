@@ -62,7 +62,7 @@ const LandingPage = () => {
             <div className="flex items-center justify-center bounce lg:mt-32 mt-8 ">
                 <img
                     src={LandingImage}
-                    className='rounded-full md:h-[25rem] md:w-[25rem] 2xl:h-[35rem] 2xl:w-[35rem] object-cover '
+                    className='rounded-full h-[18rem] w-[18rem] md:h-[30rem] md:w-[30rem] 2xl:h-[35rem] 2xl:w-[35rem] object-cover '
                 />
             </div>
         </div>
