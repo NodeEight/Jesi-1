@@ -29,7 +29,7 @@ const CoursePage = ({ selectedCourse }) => {
                             </button>
                         ))}
                     </div>
-                    <h1 className='lg:-ml-[28rem] -ml-[14rem] font-bold lg:text-base text-sm'>
+                    <h1 className='lg:-ml-[28rem] -ml-[15rem] font-bold lg:text-base text-sm'>
                         Course {tabs[activeTab]}
                     </h1>
                     <div className="lg:w-[37.5rem] w-[23rem] p-2 bg-white">
@@ -37,7 +37,11 @@ const CoursePage = ({ selectedCourse }) => {
                             <p>{selectedCourse.overview}</p>
                         </div>}
                         {activeTab === 1 && <div className='text-xs '>
-                            <p>{selectedCourse.curriculum}</p>
+                            <ul className="list-disc pl-5">
+                                {selectedCourse.curriculum.map((item, index) => (
+                                    <li key={index} className="mb-2">{item}</li>
+                                ))}
+                            </ul>
                         </div>}
                     </div>
                     <div

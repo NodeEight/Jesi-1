@@ -19,6 +19,12 @@
   background-color: orangered;
 }
 
+.hovered button:hover{
+  background-color: orangered;
+
+}
+
+
 .nav:hover {
   color: orangered;
 }

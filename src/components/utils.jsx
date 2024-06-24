@@ -80,7 +80,7 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
                 </p>
 
             </div>
-            <p className='font-quicksand text-xs  pl-4 mt-4'>
+            <p className='font-quicksand text-xs pl-4 pr-4 mt-4'>
                 {description}
             </p>
             <div className=' px-4 py-4'>
@@ -94,6 +94,8 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
 };
 
 export const url = "https://forms.office.com/Pages/ResponsePage.aspx?id=NnvSMTIcpUSD0CSX4NwgAPZNElDoFAJCuXttKwYEy1hURUNaRE9RQ1dDQTFCNzczVVBZVjBHOTlXSS4u"
+
+export const partnerurl = "https://forms.office.com/pages/responsepage.aspx?id=NnvSMTIcpUSD0CSX4NwgALr9T8OjcKxEtcLTpO3cQBtUODFLR0hOR1dGV1pHREg0VFY5UDZQVFZSUS4u"
 
 
 export const courses = [
@@ -144,15 +146,22 @@ export const coursesPreview = [
         title: "Digital Marketing",
         description: "Learn how to effectively promote brands, products, and services through various digital channels and strategies.",
         btn: "View detail",
-        overview: "A brief overview of Digital Marketing course...",
-        curriculum: "The curriculum of Digital Marketing course includes...",
+        overview: "You will learn to target audiences effectively, analyze user behavior, and optimize strategies for business success in the digital age. Throughout the course, students will develop critical thinking, creativity, and problem-solving abilities to adapt to the rapidly changing digital landscape and drive business success in the digital age",
+        curriculum: [
+            "Fundamentals of Digital Marketing and Customer Experience",
+            "Digital Media Writing and Email Marketing",
+            "Graphic Design Essentials (Canva, Photoshop, Illustrator)",
+            "Video Production and Editing (Wondershare Filmora, Adobe Premiere Pro)",
+            "Digital Analytics, SEO, and SEM",
+            "Branding and Digital Marketing Portfolio Development"
+        ],
         learn: [
-            "Digital marketing basics",
-            "SEO and SEM strategies",
-            "Content marketing",
-            "Social media marketing",
-            "Email marketing",
-            "Analytics and reporting"
+            "Marketing fundamentals and customer experience mapping",
+            "Content creation for various digital platforms",
+            "Graphic design and branding principles",
+            "Video production and editing techniques",
+            "Digital analytics, SEO, and SEM strategies",
+            "Building a professional digital marketing portfolio"
         ],
         requirements: [
             { icon: <BsLaptop />, text: "Laptop / Mobile Phone" },
@@ -170,10 +179,17 @@ export const coursesPreview = [
         title: "Product Design",
         description: "Master the art of designing user-friendly and visually appealing products that meet customer needs and market demands.",
         btn: "View detail",
-        overview: "A brief overview of Product Design course...",
-        curriculum: "The curriculum of Product Design course includes...",
+        overview: "You will learn how to conceptualize and create innovative and user centric digital products.. On the UI/UX course, students learn user research, wireframing, prototyping, visual design, and problem-solving. You will create seamless interfaces, empathize with users, and drive business success with user-centric designs across platforms and industries.",
+        curriculum: [
+            "Introduction to Product Design",
+            "Design Thinking and Problem-Solving",
+            "User Research and Analysis",
+            "Sketching and Ideation Techniques",
+            "Wireframing and Prototyping",
+            "User Interface (UI) Design",
+        ],
         learn: [
-            "Design thinking principles",
+            "Understanding to UI/UX",
             "User research and personas",
             "Wireframing and prototyping",
             "UI/UX design",
@@ -196,8 +212,15 @@ export const coursesPreview = [
         title: "Software Development",
         description: "Gain the skills to develop robust software applications, from initial concept through to final deployment.",
         btn: "View detail",
-        overview: "A brief overview of Software Development course...",
-        curriculum: "The curriculum of Software Development course includes...",
+        overview: " On the course, you will learn front-end technologies (HTML, CSS, JavaScript), back-end technologies (Python), database management, server deployment, frameworks, API integration, software architecture, security, testing, and debugging, making you proficient in creating versatile and efficient web applications.",
+        curriculum: [
+            "Programming Fundamentals",
+            "Data Structures and Algorithms",
+            "Object-Oriented Programming",
+            "Front-End Development (HTML, CSS, JavaScript)",
+            "Back-End Development (Node.js, Python, or Java)",
+            "Version Control with Git",
+        ],
         learn: [
             "Programming fundamentals",
             "Software development lifecycle",
@@ -223,10 +246,10 @@ export const blogPreview = [
     {
         id: 1,
         imageSrc: MKT1,
-        title: "Event's Name",
-        description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi itaque blanditiis voluptas accusamus quia qui laborum facilis, deserunt ipsa nulla soluta maxime dolore inventore.",
-        date: "Date",
-        author: "Admin",
+        title: "Jesi Young and Safe Scholarship 2024/2025",
+        description: "Start your career in Tech: Apply for the Jesi Young and Safe Scholarship 2024/2025.",
+        date: "24/06/2024",
+        author: "Node Eight",
         btn: "Read more",
 
     },
@@ -274,7 +297,8 @@ export const legal = [
     },
     {
         id: 3,
-        name: "Courses"
+        name: "Courses",
+        ids: "courses",
     },
     {
         id: 4,
@@ -294,14 +318,18 @@ export const links = [
     {
         id: 1,
         name: "Home",
+        ids: "home",
     },
     {
         id: 2,
         name: "About Us",
+        ids: "about",
+
     },
     {
         id: 3,
-        name: "Courses"
+        name: "Courses",
+        ids: "courses",
     },
     {
         id: 4,
@@ -313,7 +341,8 @@ export const links = [
     },
     {
         id: 6,
-        name: "Blogs & Articles"
+        name: "Blogs & Articles",
+        ids: "blogs"
     }
 ]
 

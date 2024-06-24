@@ -1,5 +1,7 @@
 import React from "react";
-import {partners} from "./utils"
+import { partners, partnerurl } from "./utils"
+import { Link } from "react-router-dom";
+
 const Join = () => {
 
   return (
@@ -17,7 +19,7 @@ const Join = () => {
           })}
         </div>
       </div>
-      <div className="mt-8 ">
+      <div className="mt-8 z-10">
         <p className="text-sm partners about">
           Jesi proudly partners with the Botnar Foundation for the Young and Safe City initiative,
           alongside Node Eight. This collaboration offers fully sponsored scholarships to tech
@@ -27,10 +29,12 @@ const Join = () => {
           inviting partners to collaborate and make a positive impact. Contact them to explore collaboration
           and create a brighter future for African youth through education and innovation.
         </p>
-        <div className="mt-12 flex items-center justify-center">
-          <button className=" bg-primary pl-8 pr-8 pt-3 pb-3 text-xs text-white rounded-sm">
-            Become a partner
-          </button>
+        <div className="mt-12 flex items-center justify-center hovered">
+          <Link to={partnerurl}>
+            <button className="bg-primary cursor-pointer pl-8 pr-8 pt-3 pb-3 text-xs text-white rounded-sm">
+              Become a partner
+            </button>
+          </Link>
         </div>
       </div>
     </div>
