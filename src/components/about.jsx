@@ -6,7 +6,7 @@ import About2 from "../assets/vision2.jpg";
 
 const About = () => {
     return (
-        <div id='about' className="relative w-full xl:h-screen lg:h-screen h-full lg:grid lg:pt-28 grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
+        <div id='about' className="relative w-full xl:h-screen lg:h-screen h-full lg:grid  grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
             <div className="bg-green_bg opacity-10 absolute inset-0 z-0"></div>
             {/* Left section */}
             <div className="relative z-10">
@@ -39,14 +39,14 @@ const About = () => {
                 </div>
             </div>
 
-            {/*  mt-4 md:pb-[4rem] */}
-            <div className="items-center grid lg:grid-cols-2 object-center relative z-10 lg:-mt-48">
+            {/* Right Section */}
+            <div className="items-center lg:p-12 xl:p-12 grid lg:-mt-16 lg:grid-cols-1 relative z-10 ">
                 {imgs.map((item, index) => (
-                    <div key={index} className="p-3 flex items-center justify-center ">
+                    <div key={index} className="p-3 h-full w-full flex items-center justify-center ">
                         <img
                             alt='Image'
                             src={item.ImgSRC}
-                            className=" object-fill rounded-lg max-w-[80%] max-h-[80%]"
+                            className="rounded-lg object-cover"
                         />
                     </div>
                 ))}
@@ -61,7 +61,7 @@ export default About;
 export const imgs = [
     {
         id: 1,
-        ImgSRC: About2,
+        ImgSRC: About1,
     },
     {
         id: 2,

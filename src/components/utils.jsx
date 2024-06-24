@@ -4,7 +4,6 @@ import { CiLocationOn } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
 import { CiClock1 } from "react-icons/ci";
 import { GoPerson } from "react-icons/go";
-import MKT1 from "../assets/mkt1.png"
 import { BsLaptop, BsEmojiSmile } from "react-icons/bs";
 import { SlNotebook } from "react-icons/sl";
 import { PiSmileyLight } from "react-icons/pi";
@@ -23,6 +22,7 @@ import ProductDesign from "../assets/product_design.pdf";
 import DigitalCourse from "../assets/digicourse.jpg";
 import ProductCourse from "../assets/productcourse.jpg";
 import SoftCourse from "../assets/softcourse.jpg";
+import About4 from "../assets/vision4.jpg";
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
     return (
@@ -68,7 +68,7 @@ export const Events = ({ imageSrc, title, date, location, btn }) => {
 };
 
 
-export const Blogs = ({ imageSrc, title, date, author, description, btn, handleBlogDetails }) => {
+export const Blogs = ({ imageSrc, title, date, author, description, btn, handleBlogClick }) => {
     return (
         <div className="max-w-sm bg-white rounded-md overflow-hidden shadow-xl mt-4">
             <img className="w-full" src={imageSrc} alt={title} />
@@ -90,7 +90,7 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
                 {description}
             </p>
             <div className=' px-4 py-4'>
-                <button onClick={handleBlogDetails}
+                <button onClick={handleBlogClick}
                     className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 text-xs ">
                     {btn}
                 </button>
@@ -254,13 +254,49 @@ export const coursesPreview = [
 export const blogPreview = [
     {
         id: 1,
-        imageSrc: MKT1,
+        imageSrc: About4,
         title: "Jesi Young and Safe Scholarship 2024/2025",
         description: "Start your career in Tech: Apply for the Jesi Young and Safe Scholarship 2024/2025.",
         date: "24/06/2024",
         author: "Node Eight",
         btn: "Read more",
-
+        firstwriteup: [
+            "Are you a recent graduate, a final-year student awaiting NSS or a passionate individual looking to kickstart a successful career in the tech industry?",
+            "We are thrilled to introduce the Jesi Young and Safe Scholarship 2024/2025, the second cohort of this transformative initiative. This immersive journey is designed to equip recent graduates, final-year students due for national service, and passionate individuals based in Ho, Ghana with comprehensive technical and soft skill development in the field of technology.",
+            "The program aims to empower you to pursue careers as software developer, product designer, or digital marketers within 6 to 12 months.",
+        ],
+        intercept: "The Jesi Young and Safe Scholarship 2024/2025, an initiative under the Young and Safe Project in Ho, funded by Fondation Botnar.  Let's dive in!",
+        secondwriteup: [
+            "Jesi provides hands-on training through project-based learning, fosters a supportive tech community, offers internship opportunities, and emphasizes the development of essential soft skills like communication, ethics, and teamwork.",
+            "The Jesi Scholarship spans two transformative phases. In the first six months, accepted candidates will engage in intensive training and mentorship. Get ready to become a tech pro with valuable skills that will set you apart! And guess what? The excitement does not end there! The next six months involve an internship where you will gain real-world practical skills that position you for your dream job. We will guide you towards your desired career. Prepare to soar in your tech career!",
+        ],
+        interceptTitle: "Start Your Career in Tech with These Awesome Areas of Expertise",
+        courses: [
+            "Software Development ",
+            "Product Design (UI/UX)",
+            "Digital Marketing"
+        ],
+        cta1: "Are you in? Check Out the Cool Requirements to Join",
+        ctabtn: "We strongly believe in offering equal opportunities to all, irrespective of gender or educational background. The following eligibility criteria apply:",
+        cta1collection: [
+            "Graduating students due for national service, recent graduates, and passionate individuals are welcome to apply.",
+            "Applicants should be based in Ho or willing to relocate there for the duration of the Jesi scholarship.",
+            "Candidates must be willing to dedicate at least 5 hours per day to the training sessions.",
+            "•	A strong passion for the tech industry is a prerequisite for all applicants."
+        ],
+        cta2: "Program benefits:",
+        cta2description: "By joining our Jesi, you gain access to a host of benefits that will accelerate your journey toward a fulfilling tech career:",
+        cta2collection: [
+            "Scholarships: Jesi offers fully funded scholarships to ensure that cost is never a barrier to learning.",
+            "Hands-On Practical Experience: Gain valuable hands-on experience through projects and exercises, preparing you to face real-world tech challenges with confidence.",
+            "Job Connections: Our commitment does not end with skills development. We help you connect with digital companies, increasing your chances of landing rewarding tech jobs.",
+            "Community for Lifelong Learning Partner: Jesi is your lifelong companion in your journey as a tech bro/sis. We provide continuous support and opportunities for continuous growth.",
+        ],
+        cta3: "Why Jesi?",
+        cta3description: "At Jesi, we empower you to build your confidence through comprehensive technical and soft skill development in an inclusive and supportive learning community. Our mission is to equip you for a future of boundless opportunities in the dynamic tech industry, where you can thrive and achieve remarkable success.",
+        cta4: "Are you ready to start your career in Tech?",
+        cta5: "The deadline for applications is June 7, 2024.",
+        cta6:"Apply here"
     },
 ]
 

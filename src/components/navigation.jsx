@@ -13,12 +13,12 @@ const scrollTo = (id) => {
     }
 };
 
-const Navigation = ({ showCourses }) => {
+const Navigation = ({ showCourses, showBlogs }) => {
     const [activeTab, setActiveTab] = useState('home');
 
     const handleNavigation = (id) => {
         setActiveTab(id);
-        if (showCourses) {
+        if (showCourses || showBlogs) {
             window.location.href = "/";
         } else {
             scrollTo(id);

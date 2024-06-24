@@ -1,7 +1,7 @@
 import React from "react"
 import { Blogs, blogPreview } from "./utils"
 
-const Blog = () => {
+const Blog = ({ handleBlogClick }) => {
     return (
         <div id="blogs" className="relative  xl:h-screen lg:h-screen h-full pl-12 pr-12 courseMain pb-12">
             <p className="font-quicksand mt-8 text-center font-bold lg:text-md text-sm">
@@ -12,7 +12,7 @@ const Blog = () => {
             </h1>
             <div className=" z-10 flex-wrap lg:mt-12 mt-6 gap-8 grid  justify-center items-center">
                 {blogPreview.map((item) => (
-                    <Blogs key={item.id} {...item} />
+                    <Blogs key={item.id} {...item} handleBlogClick={() => handleBlogClick(item)} />
                 ))}
             </div>
         </div>

@@ -22,8 +22,11 @@
 .hovered button:hover {
   background-color: orangered;
 }
+.ctaaaa:hover {
+  color: orangered;
+}
 
-.icons:hover{
+.icons:hover {
   background-color: orangered;
 }
 
