@@ -297,27 +297,24 @@ export const legal = [
     {
         id: 1,
         name: "Terms of Use",
+        ids: "about"
     },
     {
         id: 2,
         name: "Privacy Policy",
+        ids: "about"
+
     },
     {
         id: 3,
         name: "Courses",
         ids: "courses",
     },
-    {
-        id: 4,
-        name: "Scholarships"
-    },
-    {
-        id: 5,
-        name: "Career Path"
-    },
+
     {
         id: 6,
-        name: "Blogs & Articles"
+        name: "Blogs & Articles",
+        ids: "courses",
     }
 ]
 
@@ -337,14 +334,6 @@ export const links = [
         id: 3,
         name: "Courses",
         ids: "courses",
-    },
-    {
-        id: 4,
-        name: "Scholarships"
-    },
-    {
-        id: 5,
-        name: "Career Path"
     },
     {
         id: 6,

@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center lg:mt-6  mt-6">
+        {/* <div className="flex flex-col justify-center items-center lg:mt-6  mt-6">
           <h1 className="font-quicksand text-left font-bold lg:text-2xl">
             Newsletter
           </h1>
@@ -109,7 +109,7 @@ const Footer = () => {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
 
     </section>
