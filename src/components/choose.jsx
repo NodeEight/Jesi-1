@@ -6,7 +6,7 @@ import { choose, choosedetails } from './utils';
 
 const WhyChooseUs = () => {
   return (
-    <section className='relative xl:h-screen lg:h-screen xl:pr-32 xl:pl-32 xl:mt-12 h-full w-full font-quicksand gap-2 bg-white grid lg:grid-cols-2 grid-cols-1 lg:pb-48 pb-48 pl-6 pr-6 pt-14'>
+    <section className='relative xl:h-screen lg:h-screen xl:pr-32 xl:pl-32 xl:mt-12  h-full w-full font-quicksand gap-2 bg-white grid lg:grid-cols-2 grid-cols-1 lg:pb-48 pb-48 pl-6 pr-6 pt-14 '>
       <div >
         <h1 className="max-w-[10rem] -mt-6 font-bold lg:text-lg text-sm">Why Jesi</h1>
         <p className='lg:mt-14 mt-8 font-bold lg:text-4xl text-2xl'>Grow Your Skills, Define Your Bright Future</p>
@@ -35,8 +35,8 @@ const WhyChooseUs = () => {
         </div>
       </div>
 
-      <div className='lg:flex lg:justify-between mt-10 '>
-        <div className=''>
+      <div className='lg:flex lg:justify-between mt-10'>
+        <div className='md:'>
           {choosedetails.map((item, index) => (
             <div key={index} className="m-12">
               <p style={{ backgroundColor: item.color, marginLeft: item.size }} className="text-white -pl-6 flex text-xs items-center  p-2 font-quicksand lg:text-base md:text-sm whitespace-nowrap w-[9rem] rounded-sm">
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
         <img
-          className='rounded-lg max-w-[80%] max-h-[80%] object-contain'
+          className='rounded-lg max-w-[80%] max-h-[80%] object-contain md:mt-52 md:-ml-14 '
           src={Choose}
         />
       </div>
