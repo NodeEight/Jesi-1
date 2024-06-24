@@ -4,7 +4,6 @@ import { GoDotFill } from "react-icons/go";
 import { FaCircleCheck } from "react-icons/fa6";
 import { choose, choosedetails } from './utils';
 
-
 const WhyChooseUs = () => {
   return (
     <section className='relative xl:h-screen lg:h-screen h-full w-full font-quicksand  gap-2 bg-white grid lg:grid-cols-2 lg:pb-48 pb-48 pl-6 pr-6 pt-14'>

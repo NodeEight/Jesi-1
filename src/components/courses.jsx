@@ -7,7 +7,7 @@ const Courses = ({ handleCourseClick }) => {
             <p className='font-quicksand font-bold lg:text-md text-sm lg:mt-0 mt-6'>COURSES</p>
             <div className='courseSect'>
                 <div className='One'>
-                    <h1 className="font-bold lg:text-4xl text-2xl font-quicksand ">Choose Your Career Paths</h1>
+                    <h1 className="font-bold lg:text-4xl text-2xl font-quicksand ">Choose Your Career Path</h1>
                 </div>
             </div>
             <div className="flex-wrap mt-14 lg:m-24 gap-8 grid lg:grid-cols-3 grid-cols-1">
