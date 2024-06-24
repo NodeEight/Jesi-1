@@ -20,7 +20,7 @@ const Join = () => {
         </div>
       </div>
       <div className="mt-8 z-10">
-        <p className="text-sm partners about">
+        <p className="lg:text-md xl:text-md text-sm partners about">
           Jesi proudly partners with the Botnar Foundation for the Young and Safe City initiative,
           alongside Node Eight. This collaboration offers fully sponsored scholarships to tech
           enthusiasts, aligning with Jesi's goal of providing quality tech education in Africa.

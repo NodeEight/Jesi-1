@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
       <div >
         <h1 className="max-w-[10rem] -mt-6 font-bold lg:text-lg text-sm">Why Jesi</h1>
         <p className='lg:mt-14 mt-8 font-bold lg:text-4xl text-2xl'>Grow Your Skills, Define Your Bright Future</p>
-        <p className='lg:mt-8 mt-2  lg:text-md text-xs about'>
+        <p className='lg:mt-8 mt-2 lg:text-md xl:text-md text-sm about'>
           At Jesi, we empower you to build your confidence through comprehensive technical
           and soft skill development in an inclusive and supportive learning community. Our
           mission is to equip you for a future of boundless opportunities in the dynamic tech
@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
               <div key={index} className='flex items-center gap-4 xl:mt-0 mt-4'>
                 <FaCircleCheck className='text-primary xl:w-6 w-12' />
                 <div className=''>
-                  <p className='font-bold whitespace-nowrap'>
+                  <p className='font-bold whitespace-nowrap lg:text-md xl:text-md text-sm'>
                     {item.title} :
                   </p>
                   <p >

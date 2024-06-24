@@ -6,7 +6,7 @@ import About2 from "../assets/vision2.jpg";
 
 const About = () => {
     return (
-        <div id='about' className="relative w-full xl:h-screen lg:h-screen h-full lg:grid grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
+        <div id='about' className="relative w-full xl:h-screen lg:h-screen h-full lg:grid lg:pt-28 grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
             <div className="bg-green_bg opacity-10 absolute inset-0 z-0"></div>
             {/* Left section */}
             <div className="relative z-10">
@@ -50,7 +50,6 @@ const About = () => {
                         />
                     </div>
                 ))}
-
             </div>
         </div>
     );

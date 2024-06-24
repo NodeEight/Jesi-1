@@ -13,10 +13,10 @@ const CoursePage = ({ selectedCourse }) => {
 
     return (
         <div id='home' className="relative  h-full grid xl:grid-cols-2 xl:pl-12 xl:mt-12 lg:pb-16 pb-12 lg:p-8">
-            <div className="flex flex-col items-center justify-center w-full">
+            <div className="flex flex-col items-center justify-center w-full ">
                 <CourseDetails {...selectedCourse} />
-                <div className="flex flex-col items-center p-4 w-full font-quicksand">
-                    <div className="gap-0.5 mb-4 lg:-ml-[20rem] -ml-[8.5rem]">
+                <div className="flex flex-col  p-4 w-full font-quicksand">
+                    <div className="gap-0.5 mb-4 mt-4">
                         {tabs.map((tab, index) => (
                             <button
                                 key={index}

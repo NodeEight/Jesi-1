@@ -30,7 +30,7 @@ export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) =
             <img className="w-full" src={imageSrc} alt={title} />
             <div className="px-6 py-4 ">
                 <div className="font-bold text-xl whitespace-nowrap lg:mb-4 mb-2 font-quicksand">{title}</div>
-                <p className="text-gray-700  text-xs font-quicksand text-md ">{description}</p>
+                <p className="text-gray-700  lg:text-md xl:text-md text-sm font-quicksand text-md ">{description}</p>
             </div>
 
             <div className='flex items-center gap-2 px-6 py-4  mb-4'>
@@ -77,16 +77,16 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
             </div>
             <div className='flex text-xs items-center align-center gap-12 justify-center'>
                 <p className="flex font-quicksand items-center  align-center gap-2">
-                    <GoPerson className="lg:text-xl text-lg text-primary" />
+                    <GoPerson className="lg:text-md xl:text-md text-sm  text-primary" />
                     {author}
                 </p>
                 <p className="flex  text-xs font-quicksand items-center  align-center gap-2">
-                    <CiClock1 className="lg:text-xl text-lg text-primary" />
+                    <CiClock1 className="lg:text-md xl:text-md text-smtext-lg text-primary" />
                     {date}
                 </p>
 
             </div>
-            <p className='font-quicksand text-xs pl-4 pr-4 mt-4'>
+            <p className='font-quicksand lg:text-md xl:text-md text-sm pl-6 pr-6 mt-4'>
                 {description}
             </p>
             <div className=' px-4 py-4'>
