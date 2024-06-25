@@ -113,7 +113,7 @@ const Main = ({ selectedBlog }) => {
           {highlightText2(selectedBlog.cta5)}
         </p>
         <Link to={url}>
-          <button className="lg:text-md xl:pl-[6rem] xl:pr-[6rem] ctaaaa mt-8 cursor-pointer font-bold text-primary xl:text-md text-sm  pl-3 pr-3">
+          <button className="lg:text-md lg:ml-24 ml-4 pt-2 pb-2 pr-4 pl-4 rounded-sm xl:pl-[3rem] bg-primary text-white xl:pr-[3rem] ctaaaa2 mt-8 cursor-pointer font-boldxl:text-md text-sm  ">
             {selectedBlog.cta6}
           </button>
         </Link>

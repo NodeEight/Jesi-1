@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
         <img className='rounded-lg w-full h-auto object-contain '
           src={Choose}
         />
-        <div className='absolute lg:top-24 -left-8 right-0'>
+        <div className='absolute lg:top-38 -left-8 right-0'>
           {choosedetails.map((item, index) => (
             <div key={index} className="m-5 ">
               <p style={{ backgroundColor: item.color, marginLeft: item.size }} className="text-white flex text-xs items-center p-2 font-quicksand lg:text-base md:text-sm whitespace-nowrap w-[10rem] rounded-sm">

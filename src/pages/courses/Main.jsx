@@ -77,7 +77,7 @@ const CoursePage = ({ selectedCourse }) => {
                         {selectedCourse.requirements.map((item, index) => (
                             <div key={index} className='flex items-center gap-2 lg:gap-2'>
                                 <p className='text-primary'>{item.icon}</p>
-                                <p className='lg:text-sm text-xs'>{item.text}</p>
+                                <p className='lg:text-sm text-xs lg:whitespace-nowrap'>{item.text}</p>
                             </div>
                         ))}
                     </div>
