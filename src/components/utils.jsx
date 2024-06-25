@@ -142,7 +142,7 @@ export const data = [
     {
         id: 4,
         title: "Develop Soft Skills",
-        desc: "Mater essential communication, ethics, and teamwork abilities."
+        desc: "Master essential communication, ethics, and teamwork abilities."
     }
 
 ]
