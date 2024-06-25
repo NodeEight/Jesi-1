@@ -39,19 +39,19 @@ const Main = ({ selectedBlog }) => {
         </h1>
         {selectedBlog.firstwriteup.map((item, index) => {
           return (
-            <div key={index} className='mt-7 pl-3 pr-3 xl:pl-8 xl:pr-8'>
+            <div key={index} className='mt-7 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem] '>
               <p className="lg:text-md xl:text-md text-sm ">
                 {item}
               </p>
             </div>
           )
         })}
-        <p className="lg:text-md xl:text-md text-sm mt-7 pl-3 pr-3 xl:pl-8 xl:pr-8">
+        <p className="lg:text-md xl:text-md text-sm mt-7 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]">
           {highlightText(selectedBlog.intercept)}
         </p>
         {selectedBlog.secondwriteup.map((item, index) => {
           return (
-            <div key={index} className='mt-7 pl-3 pr-3 xl:pl-8 xl:pr-8'>
+            <div key={index} className='mt-7 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]'>
               <p className="lg:text-md xl:text-md text-sm ">
                 {item}
               </p>
@@ -60,60 +60,60 @@ const Main = ({ selectedBlog }) => {
         })}
         <img
           src={selectedBlog.imageSrc2}
-          className='object-center mt-12 pl-3 pr-3 xl:pl-8 xl:pr-8'
+          className='object-center mt-12 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]'
         />
 
-        <h1 className="mt-6 font-semibold pl-4 pr-4 xl:pl-8 xl:pr-8">
+        <h1 className="mt-6 font-semibold pl-4 pr-4 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.interceptTitle}
         </h1>
 
-        <ul className='mt-4 pl-8 pr-6 list-disc xl:pl-12 xl:pr-12'>
+        <ul className='mt-4 pl-8 pr-6 list-disc xl:pl-[7rem] xl:pr-[7rem]'>
           {selectedBlog.courses.map((item, index) => (
             <li key={index} className="lg:text-md xl:text-md text-sm mt-2">
               {item}
             </li>
           ))}
         </ul>
-        <p className="lg:text-md xl:text-md text-sm mt-7 pl-3 pr-3 xl:pl-8 xl:pr-8">
+        <p className="lg:text-md xl:text-md text-sm mt-7 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.cta1}
         </p>
-        <p className="lg:text-md xl:text-md text-sm mt-9 pl-3 pr-3 xl:pl-8 xl:pr-8">
+        <p className="lg:text-md xl:text-md text-sm mt-9 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.ctabtn}
         </p>
-        <ul className='mt-4 pl-8 pr-6 list-disc xl:pl-12 xl:pr-12'>
+        <ul className='mt-4 pl-8 pr-6 list-disc xl:pl-[7rem] xl:pr-[7rem]'>
           {selectedBlog.cta1collection.map((item, index) => (
             <li key={index} className="lg:text-md xl:text-md text-sm mt-2">
               {item}
             </li>
           ))}
         </ul>
-        <h1 className="mt-8 font-bold pl-4 text-sm pr-4 xl:pl-8 xl:pr-8">
+        <h1 className="mt-8 font-bold pl-4 text-sm pr-4 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.cta2}
         </h1>
-        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-8 xl:pr-8">
+        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.cta2description}
         </p>
-        <ul className='mt-4 pl-8 pr-6 list-disc xl:pl-12 xl:pr-12'>
+        <ul className='mt-4 pl-8 pr-6 list-disc xl:pl-[7rem] xl:pr-[7rem]'>
           {selectedBlog.cta2collection.map((item, index) => (
             <li key={index} className="lg:text-md xl:text-md text-sm mt-2">
               {item}
             </li>
           ))}
         </ul>
-        <h1 className="mt-8 font-bold pl-4 text-sm pr-4 xl:pl-8 xl:pr-8">
+        <h1 className="mt-8 font-bold pl-4 text-sm pr-4 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.cta3}
         </h1>
-        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-8 xl:pr-8">
+        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.cta3description}
         </p>
-        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-8 xl:pr-8">
+        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]">
           {selectedBlog.cta4}
         </p>
-        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-8 xl:pr-8">
+        <p className="lg:text-md xl:text-md text-sm mt-4 pl-3 pr-3 xl:pl-[6rem] xl:pr-[6rem]">
           {highlightText2(selectedBlog.cta5)}
         </p>
         <Link to={url}>
-          <button className="lg:text-md xl:pl-8 xl:pr-8 ctaaaa mt-8 cursor-pointer font-bold text-primary xl:text-md text-sm  pl-3 pr-3">
+          <button className="lg:text-md xl:pl-[6rem] xl:pr-[6rem] ctaaaa mt-8 cursor-pointer font-bold text-primary xl:text-md text-sm  pl-3 pr-3">
             {selectedBlog.cta6}
           </button>
         </Link>

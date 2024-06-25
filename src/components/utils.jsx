@@ -173,10 +173,10 @@ export const coursesPreview = [
             "Building a professional digital marketing portfolio"
         ],
         requirements: [
-            { icon: <BsLaptop />, text: "Laptop / Mobile Phone" },
-            { icon: <SlNotebook />, text: "Notebook & Pen" },
-            { icon: <PiSmileyLight />, text: "Be motivated" },
-            { icon: <BsEmojiSmile />, text: "Be Determined" }
+            { icon: <BsLaptop />, text: "Have a laptop" },
+            { icon: <CiClock1 />, text: "Be able to commit 5 hours a day for classes" },
+            { icon: <PiSmileyLight />, text: "Be passionate." },
+            { icon: <BsEmojiSmile />, text: "Be physically present in Ho." }
         ],
         mode: "In Person",
         duration: "6 months",
@@ -207,10 +207,10 @@ export const coursesPreview = [
             "Design tools and software"
         ],
         requirements: [
-            { icon: <BsLaptop />, text: "Laptop / Mobile Phone" },
-            { icon: <SlNotebook />, text: "Notebook & Pen" },
-            { icon: <PiSmileyLight />, text: "Be motivated" },
-            { icon: <BsEmojiSmile />, text: "Be Determined" }
+            { icon: <BsLaptop />, text: "Have a laptop" },
+            { icon: <CiClock1 />, text: "Be able to commit 5 hours a day for classes" },
+            { icon: <PiSmileyLight />, text: "Be passionate." },
+            { icon: <BsEmojiSmile />, text: "Be physically present in Ho." }
         ],
         mode: "In Person",
         duration: "6 months",
@@ -223,7 +223,7 @@ export const coursesPreview = [
         title: "Software Development",
         description: "Gain the skills to develop robust software applications, from initial concept through to final deployment.",
         btn: "View details",
-        overview: " In the course, you will learn front-end technologies (HTML, CSS, JavaScript), back-end technologies (Python), database management, server deployment, frameworks, API integration, software architecture, security, testing, and debugging, making you proficient in creating versatile and efficient web applications.",
+        overview: "In the course, you will learn front-end technologies (HTML, CSS, JavaScript), back-end technologies (Python), database management, server deployment, frameworks, API integration, software architecture, security, testing, and debugging, making you proficient in creating versatile and efficient web applications.",
         curriculum: [
             "Programming Fundamentals",
             "Data Structures and Algorithms",
@@ -241,10 +241,10 @@ export const coursesPreview = [
             "Deployment and maintenance"
         ],
         requirements: [
-            { icon: <BsLaptop />, text: "Laptop / Mobile Phone" },
-            { icon: <SlNotebook />, text: "Notebook & Pen" },
-            { icon: <PiSmileyLight />, text: "Be motivated" },
-            { icon: <BsEmojiSmile />, text: "Be Determined" }
+            { icon: <BsLaptop />, text: "Have a laptop" },
+            { icon: <CiClock1 />, text: "Be able to commit 5 hours a day for classes" },
+            { icon: <PiSmileyLight />, text: "Be passionate." },
+            { icon: <BsEmojiSmile />, text: "Be physically present in Ho." }
         ],
         mode: "In Person",
         duration: "6 months",
@@ -288,7 +288,7 @@ export const blogPreview = [
             "Graduating students due for national service, recent graduates, and passionate individuals are welcome to apply.",
             "Applicants should be based in Ho or willing to relocate there for the duration of the Jesi scholarship.",
             "Candidates must be willing to dedicate at least 5 hours per day to the training sessions.",
-            "•	A strong passion for the tech industry is a prerequisite for all applicants."
+            "A strong passion for the tech industry is a prerequisite for all applicants."
         ],
         cta2: "Program benefits:",
         cta2description: "By joining our Jesi, you gain access to a host of benefits that will accelerate your journey toward a fulfilling tech career:",
@@ -302,7 +302,7 @@ export const blogPreview = [
         cta3description: "At Jesi, we empower you to build your confidence through comprehensive technical and soft skill development in an inclusive and supportive learning community. Our mission is to equip you for a future of boundless opportunities in the dynamic tech industry, where you can thrive and achieve remarkable success.",
         cta4: "Are you ready to start your career in Tech?",
         cta5: "The deadline for applications is July 26, 2024.",
-        cta6:"Apply here"
+        cta6: "Apply here"
     },
 ]
 
