@@ -30,13 +30,13 @@ const LandingPage = () => {
                 <h1 className='lg:text-4xl 2xl:text-5xl xl:ml-0 mb-8 text-xl font-bold xl:mb-12 lg:mt-16 mt-32 '>
                     Become a <span ref={typedRef} className='text-primary'></span> <br />in 6 to 12 months
                 </h1>
-                <p className=' xl:text-lg text-sm lg:text-xs  md:mt-12 -mt-4 lg:mt-0 lg:pr-0 pr-2 about'>
+                <p className=' xl:text-xl text-xs lg:text-xs  md:mt-12 -mt-4 lg:mt-0 lg:pr-0 pr-2 about'>
                     Learn in-demand skills and get connected to jobs in tech in 6 to 12 months
                 </p>
                 <div className='flex flex-col gap-4 mt-3 mb-2'>
                     {data.map((item, index) => {
                         return (
-                            <div className='flex items-center gap-2 lg:gap-4' key={index}>
+                            <div className='flex items-center gap-1 lg:gap-4' key={index}>
                                 <FaCircleCheck className='xl:w-4 lg:mt-2 -mt-5 xl:h-4 h-3 w-3 text-primary' />
                                 <div className='flex gap-2 items-center lg:mt-3'>
                                     <p className='about '>
@@ -44,7 +44,7 @@ const LandingPage = () => {
                                             {item.title}:
                                         </span>
 
-                                        <span className='lg:ml-2 ml-1'>
+                                        <span className='lg:ml-1 ml-1'>
                                             {item.desc}
                                         </span>
                                     </p>
