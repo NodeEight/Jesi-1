@@ -37,11 +37,11 @@ const LandingPage = () => {
                     {data.map((item, index) => {
                         return (
                             <div className='flex items-center gap-2 lg:gap-4' key={index}>
-                                <FaCircleCheck className='xl:w-4 lg:-mt-2 -mt-5 xl:h-4 h-3 w-3 text-primary' />
+                                <FaCircleCheck className='xl:w-4 lg:-mt-1 -mt-5 xl:h-4 h-3 w-3 text-primary' />
                                 <div className='flex gap-2 items-center lg:mt-3'>
                                     <p className='about '>
                                         <span className='font-bold'>
-                                            {item.title} :
+                                            {item.title}:
                                         </span>
 
                                         <span className='lg:ml-2 ml-1'>
@@ -54,7 +54,7 @@ const LandingPage = () => {
                     })}
                 </div>
                 <Link to={url}>
-                    <button className='lg:mt-8 mt-4 text-xs bg-primary w-32 text-center lg:p-3 p-2 rounded-sm text-white font-quicksand'>
+                    <button className='lg:mt-12 mt-4 text-xs bg-primary w-32 text-center lg:p-3 p-2 rounded-sm text-white font-quicksand'>
                         Enroll Now
                     </button>
                 </Link>
