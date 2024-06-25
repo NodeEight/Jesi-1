@@ -11,9 +11,9 @@ export const CourseDetails = ({ imageSrc, title, mode, duration, venue }) => {
         <div className=" bg-white overflow-hidden font-quicksand lg:mt-0 mt-8 lg:w-full w-[95%] lg:pr-0 pr-2">
             {/* <img className="lg:pr-0 lg:pl-0 pl-4 pr-4 w-full" src={imageSrc} alt={title} /> */}
 
-            <div className="grid shadow-lg border-gray-200 border-[1px] w-full lg:pr-12 rounded-md xl:pl-12 pb-12 lg:grid-cols-2 xl:grid-cols-2 grid-cols-1 xl:items-center xl:justify-between">
+            <div className="grid shadow-lg border-gray-200 border-[1px] w-full lg:-pr-12 rounded-md xl:pl-12 pb-12 lg:grid-cols-2 xl:grid-cols-2 grid-cols-1 xl:items-center xl:justify-between">
                 {/* Left Column */}
-                <div className="lg:col-span-1 ">
+                <div className="lg:col-span-1 lg:pl-12 ">
                     <h1 className="font-bold px-4 mt-4 text-xl mb-2">{title}</h1>
                     <div className='flex items-center gap-16 px-4 text-xs mt-4'>
                         <p className='flex items-center gap-2 '>

@@ -28,15 +28,15 @@ const Footer = () => {
   return (
     <section id="contact" className="relative w-full h-full pb-10" style={{ backgroundColor: "rgba(0, 128, 128, 0.1)" }}>
       <div className="flex flex-col md:flex-row align-center justify-around lg:pt-[2rem] pb-2 w-full ">
-        <div className="flex flex-col justify-center items-center lg:mt-0 mt-4">
+        <div className="flex flex-col  items-center lg:mt-0 mt-4">
           <img
             src={Logo}
-            className="w-18 h-16"
+            className="w-18 h-16 lg:-ml-[52%] -ml-[53%]"
           />
-          <p className="font-quicksand text-left mt-10 font-medium mb-4 text-xs lg:max-w-[25rem] max-w-[23rem]">
+          <p className="font-quicksand text-left mt-10 font-medium mb-4 text-xs lg:max-w-[22rem] max-w-[23rem] lg:pl-3">
             Learn in-demand skills and get connected to jobs in tech in 6 to 12 months
           </p>
-          <div className="flex items-center gap-1.5 mt-2 justify-center">
+          <div className="flex items-center gap-1.5 mt-2 justify-center lg:-ml-[43%] -ml-[50%]">
             {socialmedia.map((item, index) => (
               <a
                 key={index}
@@ -52,27 +52,27 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:pl-0 pl-12 justify-center lg:mt-0 mt-4">
+        <div className="flex flex-col lg:pl-0 pl-8 justify-center lg:mt-0 mt-4">
           <h1 className="font-quicksand text-left font-bold lg:text-2xl">
             Links
           </h1>
-          <div className=" items-center gap-1.5 mt-2 justify-center">
+          <div className=" items-center gap-1.5 mt-1 justify-center">
             {links.map((item, index) => (
               <a key={index} onClick={() => scrollTo(item.ids)} href={`#${item.ids}`}>
-                <div className="font-medium lg:p-1.5 p-1 font-quicksand text-xs">{item.name}</div>
+                <div className="font-medium lg:p-1 p-1 font-quicksand text-xs">{item.name}</div>
               </a>
             ))}
           </div>
         </div>
 
-        <div className="flex flex-col lg:pl-0 pl-12 justify-center lg:mt-0 mt-4">
+        <div className="flex flex-col lg:pl-0 pl-8  justify-center lg:mt-0 mt-4">
           <h1 className="font-quicksand text-left font-bold lg:text-2xl">
             Legal
           </h1>
           <div className=" items-center gap-1.5 mt-2 justify-center">
             {legal.map((item, index) => (
               <a key={index} onClick={() => scrollTo(item.ids)} href={`#${item.ids}`} >
-                <div className="font-medium lg:p-1.5 p-1 font-quicksand text-xs">
+                <div className="font-medium lg:p-1  p-1 font-quicksand text-xs">
                   {item.name}
                 </div>
               </a>

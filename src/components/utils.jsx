@@ -22,9 +22,9 @@ import ProductDesign from "../assets/product_design.pdf";
 import DigitalCourse from "../assets/digicourse.jpg";
 import ProductCourse from "../assets/productcourse.jpg";
 import SoftCourse from "../assets/softcourse.jpg";
-import BlogHead1 from "../assets/blog1.jpg";
-import BlogHead2 from "../assets/blog2.jpg";
-import  blog_preview from "../assets/vision2.jpg"
+import BlogHead1 from "../assets/blog2.jpg";
+import BlogHead2 from "../assets/coursedetailhead.jpg";
+import blog_preview from "../assets/vision2.jpg"
 
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
@@ -94,7 +94,7 @@ export const Blogs = ({ blog_preview, title, date, author, description, btn, han
             </p>
             <div className=' px-4 py-4'>
                 <button onClick={handleBlogClick}
-                    className=" cursor-pointer text-primary font-quicksand text-left rounded-md p-2 text-xs ">
+                    className=" cursor-pointer ctaaaa text-primary font-quicksand text-left rounded-md p-2 text-xs ">
                     {btn}
                 </button>
             </div>
@@ -154,7 +154,7 @@ export const coursesPreview = [
         imageSrc: DigitalCourse,
         title: "Digital Marketing",
         description: "Learn how to effectively promote brands, products, and services through various digital channels and strategies.",
-        btn: "View detail",
+        btn: "View details",
         overview: "You will learn to target audiences effectively, analyze user behavior, and optimize strategies for business success in the digital age. Throughout the course, students will develop critical thinking, creativity, and problem-solving abilities to adapt to the rapidly changing digital landscape and drive business success in the digital age",
         curriculum: [
             "Fundamentals of Digital Marketing and Customer Experience",
@@ -188,7 +188,7 @@ export const coursesPreview = [
         imageSrc: ProductCourse,
         title: "Product Design",
         description: "Master the art of designing user-friendly and visually appealing products that meet customer needs and market demands.",
-        btn: "View detail",
+        btn: "View details",
         overview: "You will learn how to conceptualize and create innovative and user centric digital products.. On the UI/UX course, students learn user research, wireframing, prototyping, visual design, and problem-solving. You will create seamless interfaces, empathize with users, and drive business success with user-centric designs across platforms and industries.",
         curriculum: [
             "Introduction to Product Design",
@@ -222,7 +222,7 @@ export const coursesPreview = [
         imageSrc: SoftCourse,
         title: "Software Development",
         description: "Gain the skills to develop robust software applications, from initial concept through to final deployment.",
-        btn: "View detail",
+        btn: "View details",
         overview: " In the course, you will learn front-end technologies (HTML, CSS, JavaScript), back-end technologies (Python), database management, server deployment, frameworks, API integration, software architecture, security, testing, and debugging, making you proficient in creating versatile and efficient web applications.",
         curriculum: [
             "Programming Fundamentals",
@@ -301,7 +301,7 @@ export const blogPreview = [
         cta3: "Why Jesi?",
         cta3description: "At Jesi, we empower you to build your confidence through comprehensive technical and soft skill development in an inclusive and supportive learning community. Our mission is to equip you for a future of boundless opportunities in the dynamic tech industry, where you can thrive and achieve remarkable success.",
         cta4: "Are you ready to start your career in Tech?",
-        cta5: "The deadline for applications is June 7, 2024.",
+        cta5: "The deadline for applications is July 26, 2024.",
         cta6:"Apply here"
     },
 ]

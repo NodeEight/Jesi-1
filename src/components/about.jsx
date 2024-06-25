@@ -9,8 +9,8 @@ const About = () => {
         <div id='about' className="relative w-full xl:h-screen lg:h-screen h-full lg:grid  grid lg:grid-cols-2 pl-12 pr-12 pt-12 lg:pb-0 pb-14 ">
             <div className="bg-green_bg opacity-10 absolute inset-0 z-0"></div>
             {/* Left section */}
-            <div className="relative z-10">
-                <h1 className="text-gray-900 relative z-10 mt-6 font-bold  text-sm font-quicksand">ABOUT SKILLSLIFT</h1>
+            <div className="relative z-10 flex flex-col">
+                <h1 className="text-gray-900 relative z-10 mt-6 font-bold  text-sm font-quicksand">ABOUT JESI</h1>
                 <p className='lg:mt-12 mt-3 font-bold font-quicksand lg:text-4xl text-2xl '>The Place where dreams are Achieved</p>
                 <p className='lg:mt-12 mt-2 mb-6 font-quicksand lg:text-md text-sm font-medium about'>
                     Welcome to Jesi, the gateway to your Tech dreams. We are committed to making your aspirations
@@ -18,14 +18,14 @@ const About = () => {
                     with industry experts, equips you with the latest and sought-after skills that perfectly match
                     industry demands.
                 </p>
-                <p className='lg:mt-8 mt-2 mb-6 font-quicksand lg:text-md xl:text-md text-sm about font-medium'>
+                <p className='lg:mt-8  mt-2 mb-6 font-quicksand lg:text-md xl:text-md text-sm about font-medium'>
                     Our goal is to build your confidence with technical and soft skills to land a rewarding
                     job within a year of completing our program. If you're eager to kickstart your Tech journey
                     and transform your dreams into reality, look no further. Join Jesi today and let's make your
                     Tech Dreams a remarkable success story.
                 </p>
-                <div className='aboutUs'>
-                    <div className='main2 mt-6'>
+                <div className='aboutUs '>
+                    <div className='main2 mt-6 '>
                         <BiTargetLock className="icon" />
                         <div className=''>
                             <h1 className='font-quicksand font-bold lg:text-2xl text-xl  mb-2 -mt-2'>Our Vision</h1>
@@ -46,7 +46,7 @@ const About = () => {
                         <img
                             alt='Image'
                             src={item.ImgSRC}
-                            className="rounded-lg object-cover"
+                            className="rounded-lg object-cover  w-[80%]"
                         />
                     </div>
                 ))}

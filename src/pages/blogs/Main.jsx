@@ -16,7 +16,7 @@ const Main = ({ selectedBlog }) => {
   };
 
   const highlightText2 = (text) => {
-    const searchText = "June 7, 2024.";
+    const searchText = "July 26, 2024.";
     const parts = text.split(new RegExp(`(${searchText})`, 'gi'));
     return parts.map((part, index) =>
       part.toLowerCase() === searchText.toLowerCase() ? (
