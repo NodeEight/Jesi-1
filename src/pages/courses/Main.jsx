@@ -72,7 +72,7 @@ const CoursePage = ({ selectedCourse }) => {
                         </div>
                     </div>
 
-                    <h1 className="font-bold text-base lg:-ml-[30rem] -ml-[14rem] lg:mt-1 mt-4 lg:text-sm">Basic Requirements</h1>
+                    <h1 className="font-bold text-base lg:mt-1 mt-4 lg:text-sm">Basic Requirements</h1>
                     <div className='grid grid-cols-2 lg:gap-2 gap-3 justify-between lg:w-[36rem] w-[23rem] p-2'>
                         {selectedCourse.requirements.map((item, index) => (
                             <div key={index} className='flex items-center gap-2 lg:gap-2'>
