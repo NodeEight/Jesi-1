@@ -31,8 +31,8 @@ const Main = ({ selectedBlog }) => {
     <div className='lg:h-screen xl:h-full pb-12 w-full font-quicksand bg-white flex flex-col items-center'>
       <div className='flex flex-col'>
         <img
-          src={selectedBlog.imageSrc}
-          className=''
+          src={selectedBlog.imageSrc1}
+          className='object-contain mt-12 '
         />
         <h1 className="mt-4 font-bold  pl-4 pr-4 xl:text-2xl xl:text-center">
           {selectedBlog.description}
@@ -58,8 +58,12 @@ const Main = ({ selectedBlog }) => {
             </div>
           )
         })}
+        <img
+          src={selectedBlog.imageSrc2}
+          className='object-center mt-12 pl-3 pr-3 xl:pl-8 xl:pr-8'
+        />
 
-        <h1 className="mt-8 font-semibold pl-4 pr-4 xl:pl-8 xl:pr-8">
+        <h1 className="mt-6 font-semibold pl-4 pr-4 xl:pl-8 xl:pr-8">
           {selectedBlog.interceptTitle}
         </h1>
 

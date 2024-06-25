@@ -12,7 +12,7 @@ const CoursePage = ({ selectedCourse }) => {
     }
 
     return (
-        <div id='home' className="relative  h-full grid xl:grid-cols-2 xl:pl-12 xl:mt-12 lg:pb-16 pb-12 lg:p-8">
+        <div id='home' className="relative h-full grid xl:pl-12 xl:mt-2 lg:pb-16 pb-12 lg:p-8">
             <div className="flex flex-col items-center justify-center w-full ">
                 <CourseDetails {...selectedCourse} />
                 <div className="flex flex-col  p-4 w-full font-quicksand">

@@ -22,7 +22,10 @@ import ProductDesign from "../assets/product_design.pdf";
 import DigitalCourse from "../assets/digicourse.jpg";
 import ProductCourse from "../assets/productcourse.jpg";
 import SoftCourse from "../assets/softcourse.jpg";
-import About4 from "../assets/vision4.jpg";
+import BlogHead1 from "../assets/blog1.jpg";
+import BlogHead2 from "../assets/blog2.jpg";
+import  blog_preview from "../assets/vision2.jpg"
+
 
 export const Card = ({ imageSrc, title, description, btn, handleCourseClick }) => {
     return (
@@ -68,12 +71,12 @@ export const Events = ({ imageSrc, title, date, location, btn }) => {
 };
 
 
-export const Blogs = ({ imageSrc, title, date, author, description, btn, handleBlogClick }) => {
+export const Blogs = ({ blog_preview, title, date, author, description, btn, handleBlogClick }) => {
     return (
         <div className="max-w-sm bg-white rounded-md overflow-hidden shadow-xl mt-4">
-            <img className="w-full" src={imageSrc} alt={title} />
+            <img className="w-full h-full" src={blog_preview} alt={title} />
             <div className="px-6 text-center py-4 ">
-                <div className="font-bold lg:text-xl text-xl mb-2 font-quicksand">{title}</div>
+                <div className="font-bold lg:text-lg text-lg mb-2 font-quicksand">{title}</div>
             </div>
             <div className='flex text-xs items-center align-center gap-12 justify-center'>
                 <p className="flex font-quicksand items-center  align-center gap-2">
@@ -86,7 +89,7 @@ export const Blogs = ({ imageSrc, title, date, author, description, btn, handleB
                 </p>
 
             </div>
-            <p className='font-quicksand lg:text-md xl:text-md text-sm pl-6 pr-6 mt-4'>
+            <p className='font-quicksand lg:text-md xl:text-md text-xs pl-6 pr-6 mt-4'>
                 {description}
             </p>
             <div className=' px-4 py-4'>
@@ -254,7 +257,8 @@ export const coursesPreview = [
 export const blogPreview = [
     {
         id: 1,
-        imageSrc: About4,
+        blog_preview: blog_preview,
+        imageSrc1: BlogHead1,
         title: "Jesi Young and Safe Scholarship 2024/2025",
         description: "Start your career in Tech: Apply for the Jesi Young and Safe Scholarship 2024/2025.",
         date: "24/06/2024",
@@ -270,6 +274,8 @@ export const blogPreview = [
             "Jesi provides hands-on training through project-based learning, fosters a supportive tech community, offers internship opportunities, and emphasizes the development of essential soft skills like communication, ethics, and teamwork.",
             "The Jesi Scholarship spans two transformative phases. In the first six months, accepted candidates will engage in intensive training and mentorship. Get ready to become a tech pro with valuable skills that will set you apart! And guess what? The excitement does not end there! The next six months involve an internship where you will gain real-world practical skills that position you for your dream job. We will guide you towards your desired career. Prepare to soar in your tech career!",
         ],
+
+        imageSrc2: BlogHead2,
         interceptTitle: "Start Your Career in Tech with These Awesome Areas of Expertise",
         courses: [
             "Software Development ",
