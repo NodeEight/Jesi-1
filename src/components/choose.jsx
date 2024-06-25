@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
                   <p className='font-bold whitespace-nowrap flex items-center gap-1 lg:text-md xl:text-md text-sm'>
                     <FaCircleCheck className='text-primary xl:w-6 w-12' />
 
-                    {item.title} :
+                    {item.title}:
                   </p>
                   <p className='max-w-[90%] lg:pl-7 pl-12 lg:mt-2 mt-2' >
                     {item.desc}
