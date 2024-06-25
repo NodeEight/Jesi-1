@@ -28,7 +28,7 @@ const About = () => {
                     <div className='main2 mt-6 '>
                         <BiTargetLock className="icon" />
                         <div className=''>
-                            <h1 className='font-quicksand font-bold lg:text-2xl text-xl  mb-2 -mt-2'>Our Vision</h1>
+                            <h1 className='font-quicksand font-bold lg:text-2xl text-xl mb-2 lg:-mt-1'>Our Vision</h1>
                             <p className='font-quicksand lg:text-md text-sm about'>
                                 Jesi is on a remarkable journey to become the leading provider
                                 of ethical and ambitious talents that are shaping Africa's digital

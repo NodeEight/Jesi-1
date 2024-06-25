@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
 import MainBody from "./Main";
 
 const Main = ({ selectedBlog }) => {
@@ -10,7 +9,6 @@ const Main = ({ selectedBlog }) => {
 
     return (
         <div>
-            <Header />
             <MainBody selectedBlog={selectedBlog} />
         </div>
     )

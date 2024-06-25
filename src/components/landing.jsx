@@ -37,8 +37,8 @@ const LandingPage = () => {
                     {data.map((item, index) => {
                         return (
                             <div className='flex items-center gap-2 lg:gap-4' key={index}>
-                                <FaCircleCheck className='xl:w-4 xl:h-4 h-3 w-3 text-primary' />
-                                <div className='flex gap-2items-center'>
+                                <FaCircleCheck className='xl:w-4 -mt-5 lg:-mt-2 xl:h-4 h-3 w-3 text-primary' />
+                                <div className='flex gap-2 items-center lg:mt-3'>
                                     <p className='about '>
                                         <span className='font-bold'>
                                             {item.title} :

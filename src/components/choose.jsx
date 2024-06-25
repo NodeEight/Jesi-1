@@ -20,12 +20,13 @@ const WhyChooseUs = () => {
           {choose.map((item, index) => {
             return (
               <div key={index} className='flex items-center gap-4 xl:mt-0 mt-4'>
-                <FaCircleCheck className='text-primary xl:w-6 w-12' />
                 <div className=''>
-                  <p className='font-bold whitespace-nowrap lg:text-md xl:text-md text-sm'>
+                  <p className='font-bold whitespace-nowrap flex items-center gap-1 lg:text-md xl:text-md text-sm'>
+                    <FaCircleCheck className='text-primary xl:w-6 w-12' />
+
                     {item.title} :
                   </p>
-                  <p className='max-w-[90%]' >
+                  <p className='max-w-[90%] lg:pl-5 pl-12 lg:mt-2 mt-2' >
                     {item.desc}
                   </p>
                 </div>
