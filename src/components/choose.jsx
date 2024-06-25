@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
 
                     {item.title} :
                   </p>
-                  <p className='max-w-[90%] lg:pl-5 pl-12 lg:mt-2 mt-2' >
+                  <p className='max-w-[90%] lg:pl-7 pl-12 lg:mt-2 mt-2' >
                     {item.desc}
                   </p>
                 </div>
